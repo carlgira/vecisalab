@@ -5,6 +5,7 @@ metadata:
   labels:
     app: ordscontainer
 spec:
+replicas: 3
   selector:
     matchLabels:
       app: ordscontainer
