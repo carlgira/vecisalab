@@ -20,6 +20,9 @@ docker run -it javiermugueta/ecivecilab ls nodesamples
 docker run -it javiermugueta/ecivecilab node nodesamples/testconn.js
 
 ### ejemplo de soda en node.js
+
+SODA permite trabajar con JSON de manera fascilísima. Aqui un ejemplo en node, más adelsnte lo probaremos con más detalle mediasnte REST
+
 docker run -it javiermugueta/ecivecilab node nodesamples/sodahr.js
 
 ### promises
@@ -30,7 +33,9 @@ Entra en la shell del contenedor (docker run -it javiermugueta/ecivecilab) y añ
 El editor es vi, pero puedes instalar cualquier cosa con yum install xxxx, recuerda que si sales del contenedor perderás los cambios ya que no estás ejecutándolo con persistencia
 
 ## apificación del esquema hr mediante node y express: ejecución en la máquina local
-Se trata de una aplicación node.js con express que utiliza oraclenode-db para apificar la tabla employees del ewsquema hr
+Se trata de una aplicación node.js con express que utiliza oraclenode-db para apificar la tabla employees del esquema hr
+
+Pasamos datos de conexión al contenedor mediante variables de entorno
 
 export HR_USER=HR
 
@@ -38,9 +43,17 @@ export HR_PASSWORD=loqueyotediga (la pasword la sabe el instructor)
 
 export HR_CONNECTIONSTRING="(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=130.61.52.57)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=jsonpdb.dnslabel1.skynet.oraclevcn.com)))"
 
+ejecutamos el contenedor exportando el puerto 3000
+
 docker run -it -e HR_USER -e HR_PASSWORD -e HR_CONNECTIONSTRING -p 3000:3000 javiermugueta/ecivecilab node myserver/index.js
 
-In your web broser: http://127.0.0.1:3000/api/employees
+Prueba en el navegador: 
+
+http://127.0.0.1:3000/api/employees
+
+http://127.0.0.1:3000/api/employees/171
+
+Echa un vistazo al código https://github.com/javiermugueta/vecisalab/tree/master/myserver
 
 ## apificación del esquema hr mediante node y express: desplegado en kubernetes cluster
 
@@ -72,7 +85,7 @@ prueba: http://130.61.15.199:3000/api/employees/174
 
 # despliegue de ords en k8s
 
-Se trata de desplegar ORDS en kubernetes como capa de acceso a la BBDD mediante REST. Esto permite exponer la BBDD en REST en un cluster de k8s con pods stateless replicados n veces (alta disponibilidad)
+Se trata de desplegar ORDS en kubernetes como capa de acceso a la BBDD mediante REST. Esto permite exponer la BBDD en REST en un cluster de k8s con pods stateless replicados n veces (alta disponibilidad), en este caso hemos configurado tres replicas
 
 NOTA: La aplicación ya está desplegada, te explicamos los pasos por si quieres entenderlos
 
