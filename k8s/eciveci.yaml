@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eciveci
+  labels:
+    app: eciveci
+spec:
+  selector:
+    matchLabels:
+      app: eciveci
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: eciveci
+    spec:
+      containers:
+      - image: javiermugueta/ecivecilab
+        env:
+        - name: HR_USER
+          value: "HR"
+        - name: HR_CONNECTIONSTRING
+          value: "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=172.16.1.6)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=jsonpdb.dnslabel1.skynet.oraclevcn.com)))"
+        - name: HR_PASSWORD
+          valueFrom:
+           secretKeyRef:
+            name: hrpassword
+            key: password
+        name: eciveci
+        ports:
+        - containerPort: 3000
+          name: eciveci
+---
+apiVersion: v1
+kind: Service
+metadata:
+ name: eciveci
+spec:
+ type: LoadBalancer
+ selector:
+   app: eciveci
+ ports:
+   - name: client
+     protocol: TCP
+     port: 3000
+     nodePort: 31522

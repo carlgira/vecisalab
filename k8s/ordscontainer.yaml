@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ordscontainer
+  labels:
+    app: ordscontainer
+spec:
+  selector:
+    matchLabels:
+      app: ordscontainer
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: ordscontainer
+    spec:
+      containers:
+      - image: javiermugueta/ordscontainer
+        env:
+        - name: DB_HOSTNAME
+          value: "172.16.1.6"
+        - name: DB_PORT
+          value: "1521"
+        - name: DB_SERVICENAME
+          value: "jsonpdb.dnslabel1.skynet.oraclevcn.com"
+        - name: APEX_PUBLIC_USER_NAME
+          value: "ORDS_PUBLIC_USER"
+        - name: ORDS_PASS
+          valueFrom:
+           secretKeyRef:
+            name: ordspassword
+            key: password
+        name: ordscontainer
+        ports:
+        - containerPort: 8080
+          name: ordscontainer
+---
+apiVersion: v1
+kind: Service
+metadata:
+ name: ordscontainer
+spec:
+ type: LoadBalancer
+ selector:
+   app: ordscontainer
+ ports:
+   - name: client
+     protocol: TCP
+     port: 8080
+     nodePort: 31523
