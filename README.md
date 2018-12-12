@@ -138,12 +138,14 @@ Get the ID of an existing record and put it as the parameter such as the example
 curl -X GET http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA?id=puthereanid
 
 ### query records
-curl -X POST --data-binary '{"PONumber":"0"}' -H "Content-Type: application/json" "http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA?action=query"
+curl -X POST --data-binary '{"PONumber":"10"}' -H "Content-Type: application/json" "http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA?action=query"
 
 ### update records
-Get the ID of an existing record and put it as the parameter such as the example below
+Get the ID of an existing record and put it as the parameter in the url such as the example below
 
 curl -i -X PUT --data-binary '{"Requestor" : "Kevin Feeney", "User" : "KFEENEY_updated"}' -H "Content-Type: application/json" "http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA/puthereanid"
+
+Get the record by ID again and check thst the attribute User changed to KFEENEY_updated
 
 ### list records
 curl -X GET "http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA?fields=all&limit=10"
@@ -155,6 +157,8 @@ curl -i -X DELETE http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA?id=put
 
 ### delete the collection
 curl -i -X DELETE http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA
+
+That's all folks!
 
 # doco
 
