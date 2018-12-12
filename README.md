@@ -14,16 +14,16 @@ Se conectan a la BBDD por el puerto 1521 de la IP pública del nodo 1 del RAC. E
 Los ejecutamos desde un contenedor que tiene instalado node10 y oracleinstantclient18, de esta menera no tienes que instalarte nada en local.
 
 ### cómo obtener listado del contenido de los ejercicios
-docker run -it javiermugueta/ecivecilab ls *.js
+docker run -it javiermugueta/ecivecilab ls nodesamples
 
 ### realizar un test de connexion a la bbdd
-docker run -it javiermugueta/ecivecilab node testconn.js
+docker run -it javiermugueta/ecivecilab node nodesamples/testconn.js
 
 ### ejemplo de soda en node.js
-docker run -it javiermugueta/ecivecilab node sodahr.js
+docker run -it javiermugueta/ecivecilab node nodesamples/sodahr.js
 
 ### promises
-docker run -it javiermugueta/ecivecilab node promise.js
+docker run -it javiermugueta/ecivecilab node nodesamples/promise.js
 
 ### otros ejercicios
 Entra en la shell del contenedor (docker run -it javiermugueta/ecivecilab) y añade cualquier ejemplo, puedes utilizar este enlace: https://github.com/oracle/node-oracledb/tree/master/examples
