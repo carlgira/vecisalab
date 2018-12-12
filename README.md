@@ -150,6 +150,7 @@ Get the record by ID again and check thst the attribute User changed to KFEENEY_
 ### list records
 
 (Click directly in the link and will be shown in you browser)
+
 curl -X GET "http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA?fields=all&limit=10"
 
 ### delete record by id
