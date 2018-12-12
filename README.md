@@ -52,7 +52,7 @@ docker run -it javiermugueta/ocloudshell kubectl create secret generic hrpasswor
 
 Ahora creamos el despliegue:
 
-docker run -it javiermugueta/ocloudshell kubectl apply -f https://raw.githubusercontent.com/javiermugueta/eciveci/master/eciveci.yaml
+docker run -it javiermugueta/ocloudshell kubectl apply -f https://github.com/javiermugueta/vecisalab/blob/master/k8s/eciveci.yaml
 
 Comprobamos si se ha creado el pod:
 
@@ -78,7 +78,7 @@ docker run -it javiermugueta/ocloudshell kubectl create secret generic ordspassw
 
 El deployment:
 
-docker run -it javiermugueta/ocloudshell kubectl apply -f https://raw.githubusercontent.com/javiermugueta/eciveci/master/ordscontainer.yaml
+docker run -it javiermugueta/ocloudshell kubectl apply -f https://raw.githubusercontent.com/javiermugueta/vecisalab/master/k8s/ordscontainer.yaml
 
 Comprobaciones:
 
@@ -99,13 +99,12 @@ Vamos a trabajar con una colección que llamaremos myJSONDATA, pero puedes poner
 curl -i -X PUT http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA
 
 ### insert record
-Download this data: https://raw.githubusercontent.com/javiermugueta/eciveci/master/po.json and save it as PO.json
+Download this data: https://raw.githubusercontent.com/javiermugueta/vecisalab/master/sodarestsamples/po.json and save it as po.json
 
-
-curl -X POST --data-binary @PO.json -H "Content-Type: application/json" "http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA"
+curl -X POST --data-binary @po.json -H "Content-Type: application/json" "http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA"
 
 ### bulk insert
-Download this data: https://raw.githubusercontent.com/javiermugueta/eciveci/master/POList.json and save it as POlist.json
+Download this data: https://raw.githubusercontent.com/javiermugueta/vecisalab/master/sodarestsamples/POList.json and save it as POlist.json
 
 curl -X POST --data-binary @POlist.json -H "Content-Type: application/json" http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA?action=insert
 
@@ -134,6 +133,8 @@ curl -i -X DELETE http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA?id=put
 curl -i -X DELETE http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA
 
 # doco
+
+Some useful links
 
 ## node-oracledb on github
 (http://oracle.github.io/node-oracledb/)
