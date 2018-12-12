@@ -1,6 +1,6 @@
 # vecisalab
 
-[<img src="https://www.viajeselcorteingles.es/">]()
+![logocorte](https://github.com/javiermugueta/vecisalab/blob/master/logo_veci_h_sin_claim.png)
 
 ## Tienes Docker desktop instalado?
 
