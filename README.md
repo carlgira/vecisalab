@@ -29,24 +29,28 @@ docker run -it javiermugueta/ecivecilab node nodesamples/promise.js
 Entra en la shell del contenedor (docker run -it javiermugueta/ecivecilab) y añade cualquier ejemplo, puedes utilizar este enlace: https://github.com/oracle/node-oracledb/tree/master/examples
 El editor es vi, pero puedes instalar cualquier cosa con yum install xxxx, recuerda que si sales del contenedor perderás los cambios ya que no estás ejecutándolo con persistencia
 
-### apificación del esquema hr, ejecución en la máquina local
+## apificación del esquema hr mediante node y express: ejecución en la máquina local
 Se trata de una aplicación node.js con express que utiliza oraclenode-db para apificar la tabla employees del ewsquema hr
 
 export HR_USER=HR
+
 export HR_PASSWORD=loqueyotediga (la pasword la sabe el instructor)
+
 export HR_CONNECTIONSTRING="(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=130.61.52.57)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=jsonpdb.dnslabel1.skynet.oraclevcn.com)))"
 
 docker run -it -e HR_USER -e HR_PASSWORD -e HR_CONNECTIONSTRING -p 3000:3000 javiermugueta/ecivecilab node myserver/index.js
 
 In your web broser: http://127.0.0.1:3000/api/employees
 
-## apificación del esquema hr desplegado en kubernetes cluster
+## apificación del esquema hr mediante node y express: desplegado en kubernetes cluster
 
 En este caso desplegamos la aplicación anterior en kubernetes, con lo cual la hacemos "enterprise". Queremos hacer notar que en este caso la conexión entre la aplicación y la bbdd es a través de la IP de scan del rac (que, obviamente,  no es pública). La cadena de conexión está en una variable de entorno que se pasa en el deployment mediante el fichero de despliegue eciveci.yaml
 
 NOTA: La aplicación ya está desplegada, te explicamos los pasos por si quieres entenderlos
 
 Primero, almacenamos la password de HR en un secret para no exponerla en el yaml del despliegue:
+
+NOTA: Recuerda que javiermugueta/ocloudshell es un contenedor que tiene instalados los clientes del cloud para facilitarte la vida
 
 docker run -it javiermugueta/ocloudshell kubectl create secret generic hrpassword --type=string --from-literal=password=(lapasswordlasabeelinstructor)
 
