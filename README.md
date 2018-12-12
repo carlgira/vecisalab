@@ -9,23 +9,28 @@ Para windows: https://store.docker.com/editions/community/docker-ce-desktop-wind
 ## Ejemplos en node utilizando oraclenode-db
 Estan configurados para utilizar el esquema HR de la bbdd de demo
 
-Se conectan a la BBDD por el puerto 1521 de la IP pública del nodo 1 del RAC. Esto está así por stratarse de un laboratorio, obviamente, en condiciones de producción esto se hace de otra manera (ver ejercicios con kubernetes)
+Se conectan a la BBDD por el puerto 1521 de la IP pública del nodo 1 del RAC. Esto está así por tratarse de un laboratorio, obviamente, en condiciones de producción esto se hace de otra manera (ver los ejercicios con kubernetes que permiten entender el concepto)
 
-Los ejecutamos desde un contenedor que tiene instalado node10 y oracleinstantclient18, de esta menera no tienes que instalarte nada en local.
+Los ejecutamos desde un contenedor que tiene instalado node10 y oracleinstantclient18, de esta menera no tienes que instalarte nada en local
 
 ### cómo obtener listado del contenido de los ejercicios
 docker run -it javiermugueta/ecivecilab ls nodesamples
 
-### realizar un test de connexion a la bbdd
+### cómo realizar un test de connexion a la bbdd
 docker run -it javiermugueta/ecivecilab node nodesamples/testconn.js
 
 ### ejemplo de soda en node.js
 
-SODA permite trabajar con JSON de manera fascilísima. Aqui un ejemplo en node, más adelsnte lo probaremos con más detalle mediasnte REST
+SODA permite trabajar con JSON de manera fascilísima. Aqui un ejemplo en node, más adelante lo probaremos con más detalle mediasnte REST, no te lo pierdas!
+
+Este ejemplo crea un documento JSON y luego hace una query por un atributo del mismo, cuantas más veces lo ejecutes más líneas devuelve la query ya que siempre inserta el mismo contenido
 
 docker run -it javiermugueta/ecivecilab node nodesamples/sodahr.js
 
 ### promises
+
+Una promise permite ejecución asíncroma de una sentencia
+
 docker run -it javiermugueta/ecivecilab node nodesamples/promise.js
 
 ### otros ejercicios
@@ -33,7 +38,7 @@ Entra en la shell del contenedor (docker run -it javiermugueta/ecivecilab) y añ
 El editor es vi, pero puedes instalar cualquier cosa con yum install xxxx, recuerda que si sales del contenedor perderás los cambios ya que no estás ejecutándolo con persistencia
 
 ## apificación del esquema hr mediante node y express: ejecución en la máquina local
-Se trata de una aplicación node.js con express que utiliza oraclenode-db para apificar la tabla employees del esquema hr
+Se trata de una aplicación node.js con express que utiliza oraclenode-db para apificar la tabla employees del esquema hr. No necesitas hacer esto para apificar la BBDD (lo puedes hacer con ORDS) pero puede que en algún caso te interese.
 
 Pasamos datos de conexión al contenedor mediante variables de entorno
 
@@ -58,6 +63,8 @@ Echa un vistazo al código https://github.com/javiermugueta/vecisalab/tree/maste
 ## apificación del esquema hr mediante node y express: desplegado en kubernetes cluster
 
 En este caso desplegamos la aplicación anterior en kubernetes, con lo cual la hacemos "enterprise". Queremos hacer notar que en este caso la conexión entre la aplicación y la bbdd es a través de la IP de scan del rac (que, obviamente,  no es pública). La cadena de conexión está en una variable de entorno que se pasa en el deployment mediante el fichero de despliegue eciveci.yaml
+
+Más tarde hablaremos de poner un API Platform por delante de una capa de microservicios
 
 NOTA: La aplicación ya está desplegada, te explicamos los pasos por si quieres entenderlos
 
@@ -106,6 +113,8 @@ docker run -it javiermugueta/ocloudshell kubectl get svc
 (toma nota de la ip del servicio)
 
 prueba: http://130.61.70.73:8080/ords/hr/soda/latest
+
+Como ves, tenemos acceso desde "internet" a la capa de servicios, por que la hemos expuesto en kubernetes mediante un loadbalancer que apunta a todas las réplicas del container (que estén vivas). Si colocamos delante de kubernetes un API Platform podremos gobernar las APIs (eso podría ser materia de otro lab)
 
 ## ejemplos soda a través de ORDS
 Ahora que tenemos ORDS desplegado en kubernetes, podemos realizar ejercicios de SODA mediante REST, verás qué fácil:
