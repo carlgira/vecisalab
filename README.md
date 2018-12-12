@@ -8,7 +8,7 @@ Para mac: https://store.docker.com/editions/community/docker-ce-desktop-mac
 
 Para windows: https://store.docker.com/editions/community/docker-ce-desktop-windows
 
-## Ejemplos en node utilizando oraclenode-db
+## Ejemplos en node utilizando node-oracledb
 Estan configurados para utilizar el esquema HR de la bbdd de demo
 
 Se conectan a la BBDD por el puerto 1521 de la IP pública del nodo 1 del RAC. Esto está así por tratarse de un laboratorio, obviamente, en condiciones de producción esto se hace de otra manera (ver los ejercicios con kubernetes que permiten entender el concepto)
@@ -22,7 +22,6 @@ docker run -it javiermugueta/ecivecilab ls nodesamples
 docker run -it javiermugueta/ecivecilab node nodesamples/testconn.js
 
 ### ejemplo de soda en node.js
-
 SODA permite trabajar con JSON de manera fascilísima. Aqui un ejemplo en node, más adelante lo probaremos con más detalle mediasnte REST, no te lo pierdas!
 
 Este ejemplo crea un documento JSON y luego hace una query por un atributo del mismo, cuantas más veces lo ejecutes más líneas devuelve la query ya que siempre inserta el mismo contenido
@@ -30,7 +29,6 @@ Este ejemplo crea un documento JSON y luego hace una query por un atributo del m
 docker run -it javiermugueta/ecivecilab node nodesamples/sodahr.js
 
 ### promises
-
 Una promise permite ejecución asíncroma de una sentencia
 
 docker run -it javiermugueta/ecivecilab node nodesamples/promise.js
@@ -63,7 +61,6 @@ http://127.0.0.1:3000/api/employees/171
 Echa un vistazo al código https://github.com/javiermugueta/vecisalab/tree/master/myserver
 
 ## apificación del esquema hr mediante node y express: desplegado en kubernetes cluster
-
 En este caso desplegamos la aplicación anterior en kubernetes, con lo cual la hacemos "enterprise". Queremos hacer notar que en este caso la conexión entre la aplicación y la bbdd es a través de la IP de scan del rac (que, obviamente,  no es pública). La cadena de conexión está en una variable de entorno que se pasa en el deployment mediante el fichero de despliegue eciveci.yaml
 
 Más tarde hablaremos de poner un API Platform por delante de una capa de microservicios
@@ -93,7 +90,6 @@ docker run -it javiermugueta/ocloudshell kubectl get svc
 prueba: http://130.61.15.199:3000/api/employees/174
 
 # despliegue de ords en k8s
-
 Se trata de desplegar ORDS en kubernetes como capa de acceso a la BBDD mediante REST. Esto permite exponer la BBDD en REST en un cluster de k8s con pods stateless replicados n veces (alta disponibilidad), en este caso hemos configurado tres replicas
 
 NOTA: La aplicación ya está desplegada, te explicamos los pasos por si quieres entenderlos
