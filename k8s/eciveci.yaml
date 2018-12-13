@@ -16,7 +16,7 @@ spec:
         app: eciveci
     spec:
       containers:
-      - image: javiermugueta/ecivecilab
+      - image: javiermugueta/vecisalab
         env:
         - name: HR_USER
           value: "HR"
