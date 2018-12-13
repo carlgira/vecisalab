@@ -175,7 +175,9 @@ git clone https://github.com/javiermugueta/oracle-nosql-cloud-sdk-18.298
 
 En una shell ponte en el directorio:
 
+```
 cd oracle-nosql-cloud-sdk-18.298
+```
 
 Arranca el simulador y espera a que aparezca "Oracle NoSQL Cloud Simulator is ready" así:
 
