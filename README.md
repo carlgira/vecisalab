@@ -16,7 +16,7 @@ Se conectan a la BBDD por el puerto 1521 de la IP pública del nodo 1 del RAC. E
 Los ejecutamos desde un contenedor que tiene instalado node10 y oracleinstantclient18, de esta menera no tienes que instalarte nada en local
 
 ### cómo obtener listado del contenido de los ejercicios
-````
+```
 docker run -it javiermugueta/vecisalab ls nodesamples
 ```
 
