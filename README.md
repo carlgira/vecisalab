@@ -16,22 +16,28 @@ Se conectan a la BBDD por el puerto 1521 de la IP pública del nodo 1 del RAC. E
 Los ejecutamos desde un contenedor que tiene instalado node10 y oracleinstantclient18, de esta menera no tienes que instalarte nada en local
 
 ### cómo obtener listado del contenido de los ejercicios
+````
 docker run -it javiermugueta/vecisalab ls nodesamples
+```
 
 ### cómo realizar un test de connexion a la bbdd
+```
 docker run -it javiermugueta/vecisalab node nodesamples/testconn.js
+```
 
 ### ejemplo de soda en node.js
 SODA permite trabajar con JSON de manera fascilísima. Aqui un ejemplo en node, más adelante lo probaremos con más detalle mediasnte REST, no te lo pierdas!
 
 Este ejemplo crea un documento JSON y luego hace una query por un atributo del mismo, cuantas más veces lo ejecutes más líneas devuelve la query ya que siempre inserta el mismo contenido
-
+```
 docker run -it javiermugueta/vecisalab node nodesamples/sodahr.js
+```
 
 ### promises
 Una promise permite ejecución asíncroma de una sentencia
-
+```
 docker run -it javiermugueta/vecisalab node nodesamples/promise.js
+```
 
 ### otros ejercicios
 Entra en la shell del contenedor (docker run -it javiermugueta/vecisalab) y añade cualquier ejemplo, puedes utilizar este enlace: https://github.com/oracle/node-oracledb/tree/master/examples
@@ -41,23 +47,26 @@ El editor es vi, pero puedes instalar cualquier cosa con yum install xxxx, recue
 Se trata de una aplicación node.js con express que utiliza node-oracledb para apificar la tabla employees del esquema hr. No necesitas hacer esto para apificar la BBDD (lo puedes hacer con ORDS, lo veremos en otro ejercicio) pero puede que en algún caso te interese.
 
 Pasamos datos de conexión al contenedor mediante variables de entorno
-
+```
 export HR_USER=HR
 
 export HR_PASSWORD=loqueyotediga (la pasword la sabe el instructor)
 
 export HR_CONNECTIONSTRING="(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=130.61.52.57)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=jsonpdb.dnslabel1.skynet.oraclevcn.com)))"
+```
 
 ejecutamos el contenedor exportando el puerto 3000:
 
+```
 docker run -it -e HR_USER -e HR_PASSWORD -e HR_CONNECTIONSTRING -p 3000:3000 javiermugueta/ecivecilab node myserver/index.js
+```
 
 Prueba en el navegador: 
-
+```
 http://127.0.0.1:3000/api/employees
 
 http://127.0.0.1:3000/api/employees/171
-
+```
 Echa un vistazo al código https://github.com/javiermugueta/vecisalab/tree/master/myserver
 
 ## apificación del esquema hr mediante node y express: desplegado en kubernetes cluster
@@ -70,29 +79,29 @@ NOTA: La aplicación ya está desplegada, te explicamos los pasos por si quieres
 Primero, almacenamos la password de HR en un secret para no exponerla en el yaml del despliegue:
 
 NOTA: Recuerda que javiermugueta/ocloudshell es un contenedor que tiene instalados los clientes del cloud para facilitarte la vida
-
+```
 docker run -it javiermugueta/ocloudshell kubectl create secret generic hrpassword --type=string --from-literal=password=(lapasswordlasabeelinstructor)
-
+```
 Ahora creamos el despliegue:
-
+```
 docker run -it javiermugueta/ocloudshell kubectl apply -f https://github.com/javiermugueta/vecisalab/blob/master/k8s/eciveci.yaml
-
+```
 Comprobamos si se ha creado el pod:
-
+```
 docker run -it javiermugueta/ocloudshell kubectl get po
-
+```
 Comprobamos si se ha creado el servicio eciveci:
-
+```
 docker run -it javiermugueta/ocloudshell kubectl get svc
-
+```
 (toma nota de la ip del servicio eciveci)
 
 prueba: 
-
+```
 http://130.61.15.199:3000/api/employees/174
 
 http://130.61.15.199:3000/api/employees
-
+```
 
 # despliegue de ords en k8s
 Se trata de desplegar ORDS en kubernetes como capa de acceso a la BBDD mediante REST. Esto permite exponer la BBDD en REST en un cluster de k8s con pods stateless replicados n veces (alta disponibilidad), en este caso hemos configurado tres replicas. De esta manera tenemos un acceso "enterprise" a la capa de persistencia en tecnologías de bbdd Oracle (que también es enterprise) por lo que tenemos una solución robusta, escalable y tolerante a fallos.
@@ -102,19 +111,19 @@ Se trata de desplegar ORDS en kubernetes como capa de acceso a la BBDD mediante 
 NOTA: La aplicación ya está desplegada, te explicamos los pasos por si quieres entenderlos
 
 Primero el secret:
-
+```
 docker run -it javiermugueta/ocloudshell kubectl create secret generic ordspassword --type=string --from-literal=password=(lapasswordlasabeelinstructor)
-
-El deployment:
-
+```
+Ahora el deployment:
+```
 docker run -it javiermugueta/ocloudshell kubectl apply -f https://raw.githubusercontent.com/javiermugueta/vecisalab/master/k8s/ordscontainer.yaml
-
+```
 Comprobaciones:
-
+```
 docker run -it javiermugueta/ocloudshell kubectl get po
 
 docker run -it javiermugueta/ocloudshell kubectl get svc
-
+```
 (toma nota de la ip del servicio)
 
 prueba: http://130.61.70.73:8080/ords/hr/soda/latest
@@ -127,47 +136,50 @@ Ahora que tenemos ORDS desplegado en kubernetes, podemos realizar ejercicios de 
 Vamos a trabajar con una colección que llamaremos myJSONDATA, pero puedes poner lo que quieras, se creará con el nombre que pongas. Si te conectas a la bbdd verás una tabla con el nombre de la colección. El instructor te puede mostrar los objetos que se crean bajo el esquema HR.
 
 ### create collection
+```
 curl -i -X PUT http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA
-
+```
 ### insert record
 Download this data: https://raw.githubusercontent.com/javiermugueta/vecisalab/master/sodarestsamples/po.json and save it as po.json
-
+```
 curl -X POST --data-binary @po.json -H "Content-Type: application/json" "http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA"
-
+```
 ### bulk insert
 Download this data: https://raw.githubusercontent.com/javiermugueta/vecisalab/master/sodarestsamples/POList.json and save it as POlist.json
-
+```
 curl -X POST --data-binary @POlist.json -H "Content-Type: application/json" http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA?action=insert
-
+```
 ### get record by id
 Get the ID of an existing record and put it as the parameter such as the example below
-
+```
 curl -X GET http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA?id=puthereanid
-
+```
 ### query records
+```
 curl -X POST --data-binary '{"PONumber":"10"}' -H "Content-Type: application/json" "http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA?action=query"
-
+```
 ### update records
 Get the ID of an existing record and put it as the parameter in the url such as the example below
-
+```
 curl -i -X PUT --data-binary '{"Requestor" : "Kevin Feeney", "User" : "KFEENEY_updated"}' -H "Content-Type: application/json" "http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA/puthereanid"
-
+```
 Get the record by ID again and check thst the attribute User changed to KFEENEY_updated
 
 ### list records
 
 (Click directly in the link and will be shown in you browser)
-
+```
 curl -X GET "http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA?fields=all&limit=10"
-
+```
 ### delete record by id
 Get the ID of an existing record and put it as the parameter such as the example below
-
+```
 curl -i -X DELETE http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA?id=puthereanid
-
+```
 ### delete the collection
+```
 curl -i -X DELETE http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA
-
+```
 # nosql
 Vamos a utilizar el sdk del simulador, primero clona (o si no tienes git descarga el zip) de este repo: 
 
@@ -180,15 +192,15 @@ cd oracle-nosql-cloud-sdk-18.298
 ```
 
 Arranca el simulador y espera a que aparezca "Oracle NoSQL Cloud Simulator is ready" así:
-
+```
 ./runCloudSim -root midemorepo
-
+```
 Abre otra shell y compila los ejemplos:
 
 examples/java/buildExamples
 
 Ejecuta algun ejemplo:
-
+``
 examples/java/runExample BasicTableExample
 
 examples/java/runExample IndexExample
@@ -196,7 +208,7 @@ examples/java/runExample IndexExample
 examples/java/runExample IndexExample ExampleaccessTokenProvider
 
 examples/java/runExample DeleteExample
-
+```
 Echa un vistazo al código fuente
 
 # FIN
