@@ -61,9 +61,9 @@ http://127.0.0.1:3000/api/employees/171
 Echa un vistazo al código https://github.com/javiermugueta/vecisalab/tree/master/myserver
 
 ## apificación del esquema hr mediante node y express: desplegado en kubernetes cluster
-En este caso desplegamos la aplicación anterior en kubernetes, con lo cual la hacemos "enterprise". Queremos hacer notar que en este caso la conexión entre la aplicación y la bbdd es a través de la IP de scan del rac (que, obviamente,  no es pública). La cadena de conexión está en una variable de entorno que se pasa en el deployment mediante el fichero de despliegue eciveci.yaml
+En este caso desplegamos la aplicación anterior en kubernetes. Queremos hacer notar que en este caso la conexión entre la aplicación y la bbdd es a través de la IP de scan del rac (que, obviamente,  no es pública). La cadena de conexión está en una variable de entorno que se pasa en el deployment mediante el fichero de despliegue eciveci.yaml
 
-Más tarde hablaremos de poner un API Platform por delante de una capa de microservicios
+Más tarde hablaremos de poner un API Platform por delante de una capa de microservicios...
 
 NOTA: La aplicación ya está desplegada, te explicamos los pasos por si quieres entenderlos
 
@@ -95,7 +95,9 @@ http://130.61.15.199:3000/api/employees
 
 
 # despliegue de ords en k8s
-Se trata de desplegar ORDS en kubernetes como capa de acceso a la BBDD mediante REST. Esto permite exponer la BBDD en REST en un cluster de k8s con pods stateless replicados n veces (alta disponibilidad), en este caso hemos configurado tres replicas
+Se trata de desplegar ORDS en kubernetes como capa de acceso a la BBDD mediante REST. Esto permite exponer la BBDD en REST en un cluster de k8s con pods stateless replicados n veces (alta disponibilidad), en este caso hemos configurado tres replicas. De esta manera tenemos un acceso "enterprise" a la capa de persistencia en tecnologías de bbdd Oracle (que también es enterprise) por lo que tenemos una solución robusta, escalable y tolerante a fallos.
+
+![logolab](https://github.com/javiermugueta/vecisalab/blob/master/labdiagram.png)
 
 NOTA: La aplicación ya está desplegada, te explicamos los pasos por si quieres entenderlos
 
