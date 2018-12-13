@@ -88,7 +88,9 @@ docker run -it javiermugueta/ocloudshell kubectl get svc
 (toma nota de la ip del servicio eciveci)
 
 prueba: 
+
 http://130.61.15.199:3000/api/employees/174
+
 http://130.61.15.199:3000/api/employees
 
 
