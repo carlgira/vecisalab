@@ -1,0 +1,56 @@
+2018-12-12 23:56:41.707 UTC INFO [rg1-rn1] No server auth method
+2018-12-12 23:56:41.708 UTC INFO [rg1-rn1] Started ServiceDispatcher. HostPort=localhost:5006
+2018-12-12 23:56:41.708 UTC INFO [rg1-rn1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2018-12-12 23:56:41.711 UTC INFO [rg1-rn1] DTVLSN at start:0
+2018-12-12 23:56:41.711 UTC INFO [rg1-rn1] node:NullNode(-1) state change from DETACHED to UNKNOWN
+2018-12-12 23:56:41.713 UTC INFO [rg1-rn1] Current group size: 0
+2018-12-12 23:56:41.714 UTC INFO [rg1-rn1] New node rg1-rn1(-1) unknown to rep group
+2018-12-12 23:56:41.715 UTC INFO [rg1-rn1] Master changed to rg1-rn1
+2018-12-12 23:56:41.715 UTC INFO [rg1-rn1] Nascent group. rg1-rn1 is master by virtue of being the first node.
+2018-12-12 23:56:41.715 UTC INFO [rg1-rn1] node:rg1-rn1(1) state change from UNKNOWN to MASTER
+2018-12-12 23:56:41.721 UTC INFO [rg1-rn1] Successfully added node:rg1-rn1(1) HostPort = localhost: 5006 [ELECTABLE]
+2018-12-12 23:56:41.723 UTC INFO [rg1-rn1] Updated minimum JE group version to 7.5.0
+2018-12-12 23:56:41.724 UTC INFO [rg1-rn1] Node rg1-rn1 started
+2018-12-12 23:56:41.725 UTC INFO [rg1-rn1] node:NullNode(-1) state change from MASTER to UNKNOWN
+2018-12-12 23:56:41.725 UTC INFO [rg1-rn1] node:rg1-rn1(1) state change from UNKNOWN to MASTER
+2018-12-12 23:56:41.726 UTC INFO [rg1-rn1] Feeder manager accepting requests.
+2018-12-12 23:56:41.726 UTC INFO [rg1-rn1] Joining group as master
+2018-12-13 00:01:57.373 UTC SEVERE [rg1-rn1] rg1-rn1(1):/Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/rg1-rn1/env:FileDeletionDetector exited unexpectedly with exception java.io.IOException: Directory /Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/rg1-rn1/env does not exist now. Something abnormal may happen.java.io.IOException: Directory /Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/rg1-rn1/env does not exist now. Something abnormal may happen.
+	at com.sleepycat.je.log.FileDeletionDetector.processLogFileDeleteEvents(FileDeletionDetector.java:248)
+	at com.sleepycat.je.log.FileDeletionDetector.access$100(FileDeletionDetector.java:42)
+	at com.sleepycat.je.log.FileDeletionDetector$FileDeleteDetectTask.run(FileDeletionDetector.java:166)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+2018-12-13 00:01:57.375 UTC INFO [rg1-rn1] Releasing commit block latch
+2018-12-13 00:01:57.442 UTC INFO [rg1-rn1] Feeder manager forced shutdown.
+2018-12-13 00:01:57.443 UTC INFO [rg1-rn1] Feeder Manager shutting down feeders. Active and nascent feeders:0 Managed feeders:0
+2018-12-13 00:01:57.444 UTC INFO [rg1-rn1] Feeder Manager completed shutting down feeders.
+2018-12-13 00:01:57.444 UTC INFO [rg1-rn1] Feeder manager exited. CurrentTxnEnd VLSN: 51
+2018-12-13 00:01:57.445 UTC INFO [rg1-rn1] node:NullNode(-1) state change from MASTER to UNKNOWN
+2018-12-13 00:01:57.446 UTC INFO [rg1-rn1] RepNode main thread shutting down.
+2018-12-13 00:01:57.447 UTC INFO [rg1-rn1] RepNode shutdown exception:
+(JE 18.2.14) rg1-rn1(1):/Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/rg1-rn1/env java.io.IOException: Directory /Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/rg1-rn1/env does not exist now. Something abnormal may happen. UNCAUGHT_EXCEPTION: Uncaught Exception in internal thread, unable to continue. Environment is invalid and must be closed.rg1-rn1(1)[UNKNOWN] 
+No feeders.
+Group info [rg1] fb6aa27a-4cd5-4cc1-90c3-a02f79ff64fc
+ Format version: 3
+ Change version: 1
+ Max persist rep node ID: 1
+ Min JE version: 7.5.0
+ Node:rg1-rn1 localhost:5006 (is member) changeVersion:1 LocalCBVLSN:-1 at:Thu Dec 13 00:56:41 CET 2018 jeVersion:18.2.14
+vlsnRange=first=1 last=51 sync=51 txnEnd=51
+lastReplayedTxn=null lastReplayedVLSN=-1 numActiveReplayTxns=0
+
+2018-12-13 00:01:57.447 UTC INFO [rg1-rn1] Shutting down node rg1-rn1(1) DTVLSN:51
+2018-12-13 00:01:57.447 UTC INFO [rg1-rn1] Elections shutdown initiated
+2018-12-13 00:01:57.449 UTC INFO [rg1-rn1] Acceptor Thread rg1-rn1 soft shutdown initiated.
+2018-12-13 00:01:57.449 UTC INFO [rg1-rn1] Learner Thread rg1-rn1 soft shutdown initiated.
+2018-12-13 00:01:57.449 UTC INFO [rg1-rn1] Elections shutdown completed
+2018-12-13 00:01:57.449 UTC INFO [rg1-rn1] RepNode main thread: UNKNOWN rg1-rn1(1) exited.
+2018-12-13 00:01:57.449 UTC INFO [rg1-rn1] Feeder Manager node: rg1-rn1 soft shutdown initiated.
+2018-12-13 00:01:57.450 UTC INFO [rg1-rn1] ServiceDispatcher shutdown starting. HostPort=localhost:5006 Registered services: []
+2018-12-13 00:01:57.450 UTC INFO [rg1-rn1] ServiceDispatcher-localhost:5006 soft shutdown initiated.
+2018-12-13 00:01:57.451 UTC INFO [rg1-rn1] ServiceDispatcher shutdown completed. HostPort=localhost:5006
+2018-12-13 00:01:57.451 UTC INFO [rg1-rn1] rg1-rn1(1) shutdown completed.
+2018-12-13 00:01:57.452 UTC INFO [rg1-rn1] node:NullNode(-1) state change from UNKNOWN to DETACHED
+2018-12-13 00:01:57.460 UTC INFO [rg1-rn1] JEErasure soft shutdown initiated.

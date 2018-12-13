@@ -1,0 +1,421 @@
+2018-12-12 23:56:40.019 UTC INFO - [admin1] Initializing PRIMARY Admin for store: nosqlstore
+2018-12-12 23:56:40.020 UTC INFO - [admin1] Created new admin environment dir: nosequeldata/nosqlstore/sn1/admin1/env
+2018-12-12 23:56:40.028 UTC INFO - [admin1] JVM Runtime maxMemory (bytes): 3817865216
+2018-12-12 23:56:40.028 UTC INFO - [admin1] Non-default JE properties for environment: {je.env.runVerifier=false, je.log.faultReadSize=4096, je.env.runEvictor=true, je.cleaner.minUtilization=40, je.maxDisk=3221225472, je.lock.nLockTables=97, je.cleaner.threads=2, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.cleaner.minFileUtilization=5, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.log.fileCacheSize=2000, je.log.fileMax=52428800}
+2018-12-12 23:56:40.038 UTC INFO - [admin1] DataChannelFactory: basic
+2018-12-12 23:56:40.043 UTC INFO - [admin1] AdminStateTracker thread start: admin1
+2018-12-12 23:56:40.472 UTC INFO - [admin1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2018-12-12 23:56:40.513 UTC INFO - [admin1] JE recovery: POPULATE_EXPIRATION_PROFILE
+2018-12-12 23:56:40.517 UTC INFO - [admin1] JE recovery: REMOVE_TEMP_DBS
+2018-12-12 23:56:40.532 UTC INFO - [admin1] JE recovery: CKPT
+2018-12-12 23:56:40.549 UTC INFO - [admin1] JE recovery: RECOVERY_FINISHED
+2018-12-12 23:56:40.583 UTC INFO - [admin1] JE: No server auth method
+2018-12-12 23:56:40.583 UTC INFO - [admin1] JE: Started ServiceDispatcher. HostPort=localhost:5005
+2018-12-12 23:56:40.583 UTC INFO - [admin1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2018-12-12 23:56:40.628 UTC INFO - [admin1] JE: DTVLSN at start:0
+2018-12-12 23:56:40.629 UTC INFO - [admin1] JE: node:NullNode(-1) state change from DETACHED to UNKNOWN
+2018-12-12 23:56:40.780 UTC INFO - [admin1] JE: Current group size: 0
+2018-12-12 23:56:40.781 UTC INFO - [admin1] JE: New node 1(-1) unknown to rep group
+2018-12-12 23:56:40.781 UTC INFO - [admin1] JE: Master changed to 1
+2018-12-12 23:56:40.782 UTC INFO - [admin1] JE: Nascent group. 1 is master by virtue of being the first node.
+2018-12-12 23:56:40.782 UTC INFO - [admin1] JE: node:1(1) state change from UNKNOWN to MASTER
+2018-12-12 23:56:40.831 UTC INFO - [admin1] JE: Successfully added node:1(1) HostPort = localhost: 5005 [ELECTABLE]
+2018-12-12 23:56:40.839 UTC INFO - [admin1] JE: Updated minimum JE group version to 7.5.0
+2018-12-12 23:56:40.839 UTC INFO - [admin1] JE recovery: BECOME_CONSISTENT
+2018-12-12 23:56:40.840 UTC INFO - [admin1] JE: Node 1 started
+2018-12-12 23:56:40.840 UTC INFO - [admin1] JE: node:NullNode(-1) state change from MASTER to UNKNOWN
+2018-12-12 23:56:40.841 UTC INFO - [admin1] JE: node:1(1) state change from UNKNOWN to MASTER
+2018-12-12 23:56:40.842 UTC INFO - [admin1] JE: Feeder manager accepting requests.
+2018-12-12 23:56:40.843 UTC INFO - [admin1] JE: Joining group as master
+2018-12-12 23:56:40.848 UTC INFO - [admin1] State change event: Thu Dec 13 00:56:40 CET 2018, State: MASTER, Type: PRIMARY, Master: 1
+2018-12-12 23:56:40.848 UTC INFO - [admin1] AdminStateTracker queue added:MASTER
+2018-12-12 23:56:40.853 UTC INFO - [admin1] Initializing Admin Schema to schema version 5/NoSQL DB 18.2.14 2018-10-25 04:45:23 UTC  Build id: 314c08dac9c9 Edition: Enterprise
+2018-12-12 23:56:40.865 UTC INFO - [admin1] Initialize stores at schema version 5, readOnly=false
+2018-12-12 23:56:40.869 UTC INFO - [admin1] Open: AdminCriticalEventsDatabase
+2018-12-12 23:56:40.872 UTC INFO - [admin1] Open: AdminParametersDatabase
+2018-12-12 23:56:40.873 UTC INFO - [admin1] Open: AdminMemoDatabase
+2018-12-12 23:56:40.878 UTC INFO - [admin1] Open: AdminPlanDatabase
+2018-12-12 23:56:40.881 UTC INFO - [admin1] Open: AdminSecurityDatabase
+2018-12-12 23:56:40.884 UTC INFO - [admin1] Open: AdminTableDatabase
+2018-12-12 23:56:40.888 UTC INFO - [admin1] Open: AdminTopologyHistoryDatabase
+2018-12-12 23:56:40.890 UTC INFO - [admin1] Open: AdminTopologyCandidateDatabase
+2018-12-12 23:56:40.891 UTC FINE - Closing StorewideLoggingView
+2018-12-12 23:56:40.897 UTC INFO - [admin1] Initializing Admin database
+2018-12-12 23:56:40.924 UTC INFO - [admin1] Admin database initialized
+2018-12-12 23:56:40.925 UTC INFO - [admin1] statusListener service port: 62700
+2018-12-12 23:56:40.925 UTC INFO - [admin1] perfListener service port: 62700
+2018-12-12 23:56:40.926 UTC INFO - [admin1] logListener service port: 62700
+2018-12-12 23:56:40.937 UTC INFO - [admin1] Starting Thread[System table monitor,5,RMI Runtime]
+2018-12-12 23:56:40.937 UTC INFO - [admin1] Replicated environment handle established. Cache size: 2290719129, State: MASTER
+2018-12-12 23:56:40.938 UTC INFO - [admin1] Configured Admin for store: nosqlstore
+2018-12-12 23:56:40.939 UTC INFO - [admin1] Admin web service is not starting up, web port: -1
+2018-12-12 23:56:40.990 UTC INFO - [admin1] PlanStateChange [id=1 name=Deploy KVLite state=APPROVED at 2018-12-12 23:56:40 UTC numAttempts=0 : approval requested]
+2018-12-12 23:56:40.992 UTC INFO - [admin1] Plan 1 [Deploy KVLite] approved
+2018-12-12 23:56:40.998 UTC INFO - [admin1] PlanStateChange [id=1 name=Deploy KVLite state=RUNNING at 2018-12-12 23:56:40 UTC numAttempts=1 : Plan is starting]
+2018-12-12 23:56:40.999 UTC INFO - [admin1] Plan 1 [Deploy KVLite] started, 1 tasks
+2018-12-12 23:56:41.009 UTC INFO - [admin1] Plan 1 [Deploy KVLite] task [DeployDatacenter zone=KVLite] [1] started
+2018-12-12 23:56:41.013 UTC INFO - [admin1] PlanProgress [id=1 name=Deploy KVLite state=RUNNING reportTime=2018-12-12 23:56:41 UTC numAttempts=1 generalTask_Total=1 generalTask_Successful=1]
+2018-12-12 23:56:41.016 UTC INFO - [admin1] Plan 1 [Deploy KVLite] task [DeployDatacenter zone=KVLite] [1] ended, state=SUCCEEDED
+2018-12-12 23:56:41.018 UTC INFO - [admin1] PlanStateChange [id=1 name=Deploy KVLite state=SUCCEEDED at 2018-12-12 23:56:41 UTC numAttempts=1 : Plan finished.]
+2018-12-12 23:56:41.020 UTC INFO - [admin1] Plan 1 [Deploy KVLite] ended, state=SUCCEEDED
+2018-12-12 23:56:41.052 UTC INFO - [admin1] PlanStateChange [id=2 name=Deploy Storage Node state=APPROVED at 2018-12-12 23:56:41 UTC numAttempts=0 : approval requested]
+2018-12-12 23:56:41.054 UTC INFO - [admin1] Plan 2 [Deploy Storage Node] approved
+2018-12-12 23:56:41.055 UTC INFO - [admin1] PlanStateChange [id=2 name=Deploy Storage Node state=RUNNING at 2018-12-12 23:56:41 UTC numAttempts=1 : Plan is starting]
+2018-12-12 23:56:41.055 UTC INFO - [admin1] Plan 2 [Deploy Storage Node] started, 1 tasks
+2018-12-12 23:56:41.058 UTC INFO - [admin1] Plan 2 [Deploy Storage Node] task [DeploySN sn1(localhost:5000)] [1] started
+2018-12-12 23:56:41.125 UTC INFO - [admin1] PlanStateChange [id=3 name=SYS$Create system table SYS$PartitionStatsLease state=APPROVED at 2018-12-12 23:56:41 UTC numAttempts=0 : approval requested]
+2018-12-12 23:56:41.126 UTC INFO - [admin1] Plan 3 [SYS$Create system table SYS$PartitionStatsLease] approved
+2018-12-12 23:56:41.128 UTC INFO - [admin1] PlanStateChange [id=3 name=SYS$Create system table SYS$PartitionStatsLease state=RUNNING at 2018-12-12 23:56:41 UTC numAttempts=1 : Plan is starting]
+2018-12-12 23:56:41.128 UTC INFO - [admin1] Plan 3 [SYS$Create system table SYS$PartitionStatsLease] started, 1 tasks
+2018-12-12 23:56:41.129 UTC INFO - [admin1] Plan 3 [SYS$Create system table SYS$PartitionStatsLease] task [AddTable SYS$PartitionStatsLease] [1] started
+2018-12-12 23:56:41.133 UTC INFO - [admin1] PlanStateChange [id=4 name=SYS$Create system table SYS$TableStatsPartition state=APPROVED at 2018-12-12 23:56:41 UTC numAttempts=0 : approval requested]
+2018-12-12 23:56:41.134 UTC INFO - [admin1] Plan 4 [SYS$Create system table SYS$TableStatsPartition] approved
+2018-12-12 23:56:41.135 UTC INFO - [admin1] PlanStateChange [id=4 name=SYS$Create system table SYS$TableStatsPartition state=RUNNING at 2018-12-12 23:56:41 UTC numAttempts=1 : Plan is starting]
+2018-12-12 23:56:41.135 UTC INFO - [admin1] Plan 4 [SYS$Create system table SYS$TableStatsPartition] started, 1 tasks
+2018-12-12 23:56:41.137 UTC INFO - [admin1] Plan 4 [SYS$Create system table SYS$TableStatsPartition] task [AddTable SYS$TableStatsPartition] [1] started
+2018-12-12 23:56:41.151 UTC INFO - [admin1] PlanProgress [id=3 name=SYS$Create system table SYS$PartitionStatsLease state=RUNNING reportTime=2018-12-12 23:56:41 UTC numAttempts=1 generalTask_Total=1 generalTask_Successful=1]
+2018-12-12 23:56:41.153 UTC INFO - [admin1] Plan 3 [SYS$Create system table SYS$PartitionStatsLease] task [AddTable SYS$PartitionStatsLease] [1] ended, state=SUCCEEDED
+2018-12-12 23:56:41.154 UTC INFO - [admin1] PlanStateChange [id=3 name=SYS$Create system table SYS$PartitionStatsLease state=SUCCEEDED at 2018-12-12 23:56:41 UTC numAttempts=1 : Plan finished.]
+2018-12-12 23:56:41.155 UTC INFO - [admin1] Plan 3 [SYS$Create system table SYS$PartitionStatsLease] ended, state=SUCCEEDED
+2018-12-12 23:56:41.156 UTC INFO - [admin1] PlanProgress [id=4 name=SYS$Create system table SYS$TableStatsPartition state=RUNNING reportTime=2018-12-12 23:56:41 UTC numAttempts=1 generalTask_Total=1 generalTask_Successful=1]
+2018-12-12 23:56:41.158 UTC INFO - [admin1] Plan 4 [SYS$Create system table SYS$TableStatsPartition] task [AddTable SYS$TableStatsPartition] [1] ended, state=SUCCEEDED
+2018-12-12 23:56:41.158 UTC INFO - [admin1] PlanStateChange [id=4 name=SYS$Create system table SYS$TableStatsPartition state=SUCCEEDED at 2018-12-12 23:56:41 UTC numAttempts=1 : Plan finished.]
+2018-12-12 23:56:41.160 UTC INFO - [admin1] Plan 4 [SYS$Create system table SYS$TableStatsPartition] ended, state=SUCCEEDED
+2018-12-12 23:56:41.168 UTC INFO - [admin1] PlanStateChange [id=5 name=SYS$Create system table SYS$IndexStatsLease state=APPROVED at 2018-12-12 23:56:41 UTC numAttempts=0 : approval requested]
+2018-12-12 23:56:41.169 UTC INFO - [admin1] Plan 5 [SYS$Create system table SYS$IndexStatsLease] approved
+2018-12-12 23:56:41.170 UTC INFO - [admin1] PlanStateChange [id=5 name=SYS$Create system table SYS$IndexStatsLease state=RUNNING at 2018-12-12 23:56:41 UTC numAttempts=1 : Plan is starting]
+2018-12-12 23:56:41.170 UTC INFO - [admin1] Plan 5 [SYS$Create system table SYS$IndexStatsLease] started, 1 tasks
+2018-12-12 23:56:41.173 UTC INFO - [admin1] Plan 5 [SYS$Create system table SYS$IndexStatsLease] task [AddTable SYS$IndexStatsLease] [1] started
+2018-12-12 23:56:41.180 UTC INFO - [admin1] PlanProgress [id=5 name=SYS$Create system table SYS$IndexStatsLease state=RUNNING reportTime=2018-12-12 23:56:41 UTC numAttempts=1 generalTask_Total=1 generalTask_Successful=1]
+2018-12-12 23:56:41.182 UTC INFO - [admin1] Plan 5 [SYS$Create system table SYS$IndexStatsLease] task [AddTable SYS$IndexStatsLease] [1] ended, state=SUCCEEDED
+2018-12-12 23:56:41.182 UTC INFO - [admin1] PlanStateChange [id=5 name=SYS$Create system table SYS$IndexStatsLease state=SUCCEEDED at 2018-12-12 23:56:41 UTC numAttempts=1 : Plan finished.]
+2018-12-12 23:56:41.184 UTC INFO - [admin1] Plan 5 [SYS$Create system table SYS$IndexStatsLease] ended, state=SUCCEEDED
+2018-12-12 23:56:41.186 UTC INFO - [admin1] Monitor collector: adding sn1 to monitoring
+2018-12-12 23:56:41.188 UTC INFO - [admin1] PlanProgress [id=2 name=Deploy Storage Node state=RUNNING reportTime=2018-12-12 23:56:41 UTC numAttempts=1 generalTask_Total=1 generalTask_Successful=1]
+2018-12-12 23:56:41.190 UTC INFO - [admin1] Plan 2 [Deploy Storage Node] task [DeploySN sn1(localhost:5000)] [1] ended, state=SUCCEEDED
+2018-12-12 23:56:41.191 UTC INFO - [admin1] PlanStateChange [id=2 name=Deploy Storage Node state=SUCCEEDED at 2018-12-12 23:56:41 UTC numAttempts=1 : Plan finished.]
+2018-12-12 23:56:41.193 UTC INFO - [admin1] Plan 2 [Deploy Storage Node] ended, state=SUCCEEDED
+2018-12-12 23:56:41.113 UTC INFO - [sn1] Starting StorageNodeAgent for nosqlstore
+2018-12-12 23:56:41.147 UTC INFO - [sn1] Create collector service and register parameter listeners successfully.
+2018-12-12 23:56:41.158 UTC INFO - [sn1] Started MasterRebalanceThread
+2018-12-12 23:56:41.166 UTC INFO - [sn1] Starting MonitorAgent.  Server socket factory:<ClearServerSocketFactory backlog=1024 portRange=0,0> Client socket factory:<ClientSocketFactory name=nosqlstore|sn|monitor id=-1106741931 connectMs=10000 readMs=5000>
+2018-12-12 23:56:41.172 UTC INFO - [sn1] nosqlstore:sn1:MONITOR service port: 62710
+2018-12-12 23:56:41.175 UTC INFO - [sn1] Successfully created secure proxy for the storage node agent
+2018-12-12 23:56:41.178 UTC INFO - [sn1] nosqlstore:sn1:MAIN service port: 62710
+2018-12-12 23:56:41.179 UTC INFO - [sn1] Rebound to registry port 5000 using name sn1 with SSF:<ClearServerSocketFactory backlog=1024 portRange=0,0>
+2018-12-12 23:56:41.179 UTC INFO - [sn1] Service status changed from STARTING to RUNNING
+2018-12-12 23:56:41.194 UTC INFO - [admin1] PlanStateChange [id=6 name=SYS$Create system table SYS$TableStatsIndex state=APPROVED at 2018-12-12 23:56:41 UTC numAttempts=0 : approval requested]
+2018-12-12 23:56:41.195 UTC INFO - [admin1] [sn1] Service status: RUNNING 2018-12-12 23:56:41 UTC
+2018-12-12 23:56:41.179 UTC INFO - [sn1] Started StorageNodeAgent for nosqlstore
+2018-12-12 23:56:41.198 UTC INFO - [admin1] Plan 6 [SYS$Create system table SYS$TableStatsIndex] approved
+2018-12-12 23:56:41.199 UTC INFO - [admin1] PlanStateChange [id=6 name=SYS$Create system table SYS$TableStatsIndex state=RUNNING at 2018-12-12 23:56:41 UTC numAttempts=1 : Plan is starting]
+2018-12-12 23:56:41.199 UTC INFO - [admin1] Plan 6 [SYS$Create system table SYS$TableStatsIndex] started, 1 tasks
+2018-12-12 23:56:41.201 UTC INFO - [admin1] Plan 6 [SYS$Create system table SYS$TableStatsIndex] task [AddTable SYS$TableStatsIndex] [1] started
+2018-12-12 23:56:41.208 UTC INFO - [admin1] PlanProgress [id=6 name=SYS$Create system table SYS$TableStatsIndex state=RUNNING reportTime=2018-12-12 23:56:41 UTC numAttempts=1 generalTask_Total=1 generalTask_Successful=1]
+2018-12-12 23:56:41.209 UTC INFO - [admin1] Plan 6 [SYS$Create system table SYS$TableStatsIndex] task [AddTable SYS$TableStatsIndex] [1] ended, state=SUCCEEDED
+2018-12-12 23:56:41.210 UTC INFO - [admin1] PlanStateChange [id=6 name=SYS$Create system table SYS$TableStatsIndex state=SUCCEEDED at 2018-12-12 23:56:41 UTC numAttempts=1 : Plan finished.]
+2018-12-12 23:56:41.211 UTC INFO - [admin1] Plan 6 [SYS$Create system table SYS$TableStatsIndex] ended, state=SUCCEEDED
+2018-12-12 23:56:41.216 UTC INFO - [admin1] PlanStateChange [id=7 name=Deploy Admin Service state=APPROVED at 2018-12-12 23:56:41 UTC numAttempts=0 : approval requested]
+2018-12-12 23:56:41.218 UTC INFO - [admin1] Plan 7 [Deploy Admin Service] approved
+2018-12-12 23:56:41.219 UTC INFO - [admin1] PlanStateChange [id=7 name=Deploy Admin Service state=RUNNING at 2018-12-12 23:56:41 UTC numAttempts=1 : Plan is starting]
+2018-12-12 23:56:41.219 UTC INFO - [admin1] Plan 7 [Deploy Admin Service] started, 2 tasks
+2018-12-12 23:56:41.225 UTC INFO - [admin1] Plan 7 [Deploy Admin Service] task [DeployAdmin admin1 on sn1] [1] started
+2018-12-12 23:56:41.255 UTC INFO - [admin1] newParameters called for Monitor
+2018-12-12 23:56:41.256 UTC INFO - [admin1] PlanProgress [id=7 name=Deploy Admin Service state=RUNNING reportTime=2018-12-12 23:56:41 UTC numAttempts=1 generalTask_Total=2 generalTask_Successful=1 generalTask_NotStarted=1]
+2018-12-12 23:56:41.257 UTC INFO - [admin1] Plan 7 [Deploy Admin Service] task [DeployAdmin admin1 on sn1] [1] ended, state=SUCCEEDED
+2018-12-12 23:56:41.258 UTC INFO - [admin1] Plan 7 [Deploy Admin Service] task [WaitForAdminState admin1 to reach RUNNING] [2] started
+2018-12-12 23:56:41.263 UTC INFO - [admin1] PlanProgress [id=7 name=Deploy Admin Service state=RUNNING reportTime=2018-12-12 23:56:41 UTC numAttempts=1 generalTask_Total=2 generalTask_Successful=2]
+2018-12-12 23:56:41.264 UTC INFO - [admin1] Plan 7 [Deploy Admin Service] task [WaitForAdminState admin1 to reach RUNNING] [2] ended, state=SUCCEEDED
+2018-12-12 23:56:41.265 UTC INFO - [admin1] PlanStateChange [id=7 name=Deploy Admin Service state=SUCCEEDED at 2018-12-12 23:56:41 UTC numAttempts=1 : Plan finished.]
+2018-12-12 23:56:41.266 UTC INFO - [admin1] Plan 7 [Deploy Admin Service] ended, state=SUCCEEDED
+2018-12-12 23:56:41.271 UTC INFO - [admin1] Created Storage Node Pool: KVLitePool
+2018-12-12 23:56:41.274 UTC INFO - [admin1] Added Storage Node sn1 to pool: KVLitePool
+2018-12-12 23:56:41.300 UTC INFO - [admin1] KVLite has nothing to rebalance
+2018-12-12 23:56:41.359 UTC INFO - [admin1] PlanStateChange [id=8 name=Deploy KVStore state=APPROVED at 2018-12-12 23:56:41 UTC numAttempts=0 : approval requested]
+2018-12-12 23:56:41.361 UTC INFO - [admin1] Plan 8 [Deploy KVStore] approved
+2018-12-12 23:56:41.365 UTC INFO - [admin1] Plan 8 [Deploy KVStore] deploying topology candidate KVLite.
+2018-12-12 23:56:41.370 UTC INFO - [admin1] Current topology: store=nosqlstore  numPartitions=0 sequence=2
+  zn: id=zn1 name=KVLite repFactor=1 type=PRIMARY allowArbiters=false masterAffinity=false
+
+  sn=[sn1] zn:[id=zn1 name=KVLite] localhost:5000
+
+  numShards=0
+
+2018-12-12 23:56:41.370 UTC INFO - [admin1] Preview of changes to be executed by Plan 8 [Deploy KVStore]:
+Topology transformation from current deployed topology to KVLite:
+Create 1 shard 
+Create 1 RN 
+Create 10 partitions 
+
+shard rg1
+  1 new RN : rg1-rn1 
+  10 new partitions 
+
+2018-12-12 23:56:41.371 UTC INFO - [admin1] Target topology candidate: KVLite
+store=nosqlstore  numPartitions=10 sequence=14
+  zn: id=zn1 name=KVLite repFactor=1 type=PRIMARY allowArbiters=false masterAffinity=false
+
+  sn=[sn1] zn:[id=zn1 name=KVLite] localhost:5000
+    [rg1-rn1]
+
+  numShards=1
+  shard=[rg1] num partitions=10
+    [rg1-rn1] sn=sn1
+
+2018-12-12 23:56:41.372 UTC INFO - [admin1] PlanStateChange [id=8 name=Deploy KVStore state=RUNNING at 2018-12-12 23:56:41 UTC numAttempts=1 : Plan is starting]
+2018-12-12 23:56:41.372 UTC INFO - [admin1] Plan 8 [Deploy KVStore] started, 9 tasks
+2018-12-12 23:56:41.374 UTC INFO - [admin1] Plan 8 [Deploy KVStore] task [UpdateDatacenterV2 zone=zn1] [1] started
+2018-12-12 23:56:41.376 UTC INFO - [admin1] PlanProgress [id=8 name=Deploy KVStore state=RUNNING reportTime=2018-12-12 23:56:41 UTC numAttempts=1 generalTask_Total=9 generalTask_Successful=1 generalTask_NotStarted=8]
+2018-12-12 23:56:41.377 UTC INFO - [admin1] Plan 8 [Deploy KVStore] task [UpdateDatacenterV2 zone=zn1] [1] ended, state=SUCCEEDED
+2018-12-12 23:56:41.377 UTC INFO - [admin1] Plan 8 [Deploy KVStore] task [DeployShard on [sn1] zn:[id=zn1 name=KVLite] localhost:5000 ] [2] started
+2018-12-12 23:56:41.384 UTC INFO - [admin1] PlanProgress [id=8 name=Deploy KVStore state=RUNNING reportTime=2018-12-12 23:56:41 UTC numAttempts=1 generalTask_Total=9 generalTask_Successful=2 generalTask_NotStarted=7]
+2018-12-12 23:56:41.385 UTC INFO - [admin1] Plan 8 [Deploy KVStore] task [DeployShard rg1 on [sn1] zn:[id=zn1 name=KVLite] localhost:5000 ] [2] ended, state=SUCCEEDED
+2018-12-12 23:56:41.385 UTC INFO - [admin1] Plan 8 [Deploy KVStore] task [DeployNewRN on sn1(localhost:5000)] [3] started
+2018-12-12 23:56:41.390 UTC INFO - [admin1] Plan 8 [Deploy KVStore] task [DeployNewRN rg1-rn1 on sn1(localhost:5000)] creating rg1-rn1 on sn1 haPort=localhost:5,006 helpers=localhost:5006 storage directory path=/Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1 directory size=1,073,741,824 log directory path =null log directory size = 0 heapMB=unspecified cachePercent=70 cacheSize=unspecified -XX:ParallelGCThreads=70
+2018-12-12 23:56:42.468 UTC INFO - [admin1] Monitor collector: adding rg1-rn1 to monitoring
+2018-12-12 23:56:42.470 UTC INFO - [admin1] PlanProgress [id=8 name=Deploy KVStore state=RUNNING reportTime=2018-12-12 23:56:42 UTC numAttempts=1 generalTask_Total=9 generalTask_Successful=3 generalTask_NotStarted=6]
+2018-12-12 23:56:42.472 UTC INFO - [admin1] Plan 8 [Deploy KVStore] task [DeployNewRN rg1-rn1 on sn1(localhost:5000)] [3] ended, state=SUCCEEDED
+2018-12-12 23:56:42.472 UTC INFO - [admin1] Plan 8 [Deploy KVStore] task [UpdateNthRNHelperHost] [4] started
+2018-12-12 23:56:41.495 UTC INFO - [rg1-rn1] Thread[ rg1-rn1 RepNodeStateUpdateThread,5,RMI Runtime] started
+2018-12-12 23:56:41.520 UTC INFO - [rg1-rn1] NoSQL version:18.2.14 2018-10-25 04:45:23 UTC  Build id: 314c08dac9c9 Edition: Enterprise JE version:18.2.14 Java version:1.8.0_191
+2018-12-12 23:56:41.520 UTC INFO - [rg1-rn1] JVM Runtime maxMemory:3,728,384 kB JE cache size:0 kB Max Offheap cache size:0 kB
+2018-12-12 23:56:41.520 UTC INFO - [rg1-rn1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=128, je.rep.envUnknownStateTimeout=10 s, je.env.runVerifier=false, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=3 s, je.env.runEvictor=true, je.rep.repstreamOpenTimeout=2 s, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.rep.electionsReadTimeout=2 s, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.rep.heartbeatInterval=500, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=3 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.cleaner.minFileUtilization=5, je.rep.electionsOpenTimeout=2 s, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2018-12-12 23:56:41.520 UTC INFO - [rg1-rn1] DataChannelFactory: basic
+2018-12-12 23:56:41.522 UTC INFO - [rg1-rn1] Created new environment dir: /Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/rg1-rn1/env
+2018-12-12 23:56:41.523 UTC INFO - [rg1-rn1] Storage type of: /Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/rg1-rn1/env is UNKNOWN
+2018-12-12 23:56:41.528 UTC INFO - [rg1-rn1] Table manager created (max change history=1000)
+2018-12-12 23:56:41.534 UTC INFO - [rg1-rn1] Partition database cache mode: EVICT_LN
+2018-12-12 23:56:41.545 UTC INFO - [rg1-rn1] Starting task: interval is 20 SECONDS, delay is 18455(ms)
+2018-12-12 23:56:41.572 UTC INFO - [rg1-rn1] Request type ALL is enabled
+2018-12-12 23:56:41.582 UTC INFO - [rg1-rn1] Thread[ rg1-rn1 MetadataUpdateThread,5,RMI Runtime] started
+2018-12-12 23:56:41.583 UTC INFO - [rg1-rn1] Registering GC listener with PS Scavenge
+2018-12-12 23:56:41.585 UTC INFO - [rg1-rn1] Registering GC listener with PS MarkSweep
+2018-12-12 23:56:41.608 UTC INFO - [rg1-rn1] Coordinating tasks:KVStorageStats, KVIndexCreationMax real permits:2
+2018-12-12 23:56:41.609 UTC INFO - [rg1-rn1] Starting RepNodeService
+2018-12-12 23:56:41.609 UTC INFO - [rg1-rn1] Starting RN MonitorAgent.  Server socket factory:<ClearServerSocketFactory backlog=1024 portRange=0,0> Client socket connect factory: <ClientSocketFactory name=nosqlstore|rn|monitor id=-596378244 connectMs=10000 readMs=10000>
+2018-12-12 23:56:41.619 UTC INFO - [rg1-rn1] nosqlstore:rg1-rn1:MONITOR service port: 62710
+2018-12-12 23:56:41.620 UTC INFO - [rg1-rn1] Starting MonitorAgent
+2018-12-12 23:56:41.637 UTC INFO - [rg1-rn1] Successfully created secure proxy for the repnode admin
+2018-12-12 23:56:41.657 UTC INFO - [rg1-rn1] nosqlstore:rg1-rn1:ADMIN service port: 62710
+2018-12-12 23:56:41.657 UTC INFO - [rg1-rn1] RepNodeAdmin registered
+2018-12-12 23:56:41.689 UTC INFO - [rg1-rn1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2018-12-12 23:56:41.691 UTC INFO - [rg1-rn1] JE recovery: POPULATE_EXPIRATION_PROFILE
+2018-12-12 23:56:41.692 UTC INFO - [rg1-rn1] JE recovery: REMOVE_TEMP_DBS
+2018-12-12 23:56:41.693 UTC INFO - [rg1-rn1] JE recovery: CKPT
+2018-12-12 23:56:41.700 UTC INFO - [rg1-rn1] JE recovery: RECOVERY_FINISHED
+2018-12-12 23:56:41.707 UTC INFO - [rg1-rn1] JE: No server auth method
+2018-12-12 23:56:41.708 UTC INFO - [rg1-rn1] JE: Started ServiceDispatcher. HostPort=localhost:5006
+2018-12-12 23:56:41.709 UTC INFO - [rg1-rn1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2018-12-12 23:56:41.711 UTC INFO - [rg1-rn1] JE: DTVLSN at start:0
+2018-12-12 23:56:41.711 UTC INFO - [rg1-rn1] JE: node:NullNode(-1) state change from DETACHED to UNKNOWN
+2018-12-12 23:56:41.713 UTC INFO - [rg1-rn1] JE: Current group size: 0
+2018-12-12 23:56:41.714 UTC INFO - [rg1-rn1] JE: New node rg1-rn1(-1) unknown to rep group
+2018-12-12 23:56:41.715 UTC INFO - [rg1-rn1] JE: Master changed to rg1-rn1
+2018-12-12 23:56:41.715 UTC INFO - [rg1-rn1] JE: Nascent group. rg1-rn1 is master by virtue of being the first node.
+2018-12-12 23:56:41.715 UTC INFO - [rg1-rn1] JE: node:rg1-rn1(1) state change from UNKNOWN to MASTER
+2018-12-12 23:56:41.721 UTC INFO - [rg1-rn1] JE: Successfully added node:rg1-rn1(1) HostPort = localhost: 5006 [ELECTABLE]
+2018-12-12 23:56:41.723 UTC INFO - [rg1-rn1] JE: Updated minimum JE group version to 7.5.0
+2018-12-12 23:56:41.724 UTC INFO - [rg1-rn1] JE recovery: BECOME_CONSISTENT
+2018-12-12 23:56:41.724 UTC INFO - [rg1-rn1] JE: Node rg1-rn1 started
+2018-12-12 23:56:41.725 UTC INFO - [rg1-rn1] JE: node:NullNode(-1) state change from MASTER to UNKNOWN
+2018-12-12 23:56:41.725 UTC INFO - [rg1-rn1] JE: node:rg1-rn1(1) state change from UNKNOWN to MASTER
+2018-12-12 23:56:41.726 UTC INFO - [rg1-rn1] JE: Feeder manager accepting requests.
+2018-12-12 23:56:41.726 UTC INFO - [rg1-rn1] JE: Joining group as master
+2018-12-12 23:56:41.727 UTC INFO - [rg1-rn1] Opened JE environment: 18.2.14 JVM max heap: 3,817,865,216 JE properties:  nodeName=null allowCreate=true recoveryProgressListener=true classLoader=false customStats=false cacheSize=2672505651 offHeapCacheSize=0 cacheMode=EVICT_LN txnNoSync=false txnWriteNoSync=false exceptionListener=false map={je.lock.timeout=10 s, je.cleaner.minFileUtilization=5, je.cleaner.readSize=1048576, je.log.faultReadSize=4096, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.log.fileMax=1073741824, je.rep.feederTimeout=3 s, je.rep.node.priority=1, je.file.logging.prefix=rg1-rn1, je.rep.nodeName=rg1-rn1, je.nodeMaxEntries=128, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.maxDisk=1073741824, je.maxMemoryPercent=70, je.env.runVerifier=false, je.rep.electableGroupSizeOverride=0, je.rep.electionsReadTimeout=2 s, je.env.runEvictor=true, je.log.iteratorReadSize=1048576, je.rep.heartbeatInterval=500, je.txn.durability=WRITE_NO_SYNC,WRITE_NO_SYNC,SIMPLE_MAJORITY, je.maxOffHeapMemory=0, je.checkpointer.bytesInterval=500000000, je.log.numBuffers=16, je.rep.nodeHostPort=localhost:5006, je.rep.vlsn.distance=1000000, je.rep.txnRollbackLimit=10, je.rep.replayMaxOpenDbHandles=100, je.rep.ignoreSecondaryNodeId=true, je.maxMemory=0, je.file.logging.directory=nosequeldata/nosqlstore/log, je.cleaner.minUtilization=40, je.env.isTransactional=true, je.log.fileCacheSize=2000, je.rep.repstreamOpenTimeout=2 s, je.rep.helperHosts=localhost:5006, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.vlsn.logCacheSize=128, je.rep.replicaTimeout=3 s, je.lock.nLockTables=97, je.rep.nodeType=ELECTABLE, je.rep.electionsOpenTimeout=2 s, je.rep.envUnknownStateTimeout=10 s, je.rep.preserveRecordVersion=true, je.rep.groupName=rg1, je.rep.replicaAckTimeout=5 s, je.cleaner.threads=2}
+2018-12-12 23:56:41.754 UTC INFO - [rg1-rn1] Local Environment version updated to: 18.2.14 2018-10-25 04:45:23 UTC  Build id: 314c08dac9c9 Edition: Enterprise Previous version:  none
+2018-12-12 23:56:41.755 UTC INFO - [rg1-rn1] State change event: Thu Dec 13 00:56:41 CET 2018, State: MASTER, Type: ELECTABLE, Master: rg1-rn1
+2018-12-12 23:56:41.755 UTC INFO - [rg1-rn1] MigrationStateTracker queue added:MASTER
+2018-12-12 23:56:41.755 UTC INFO - [rg1-rn1] TableManagerStateTracker queue added:MASTER
+2018-12-12 23:56:41.755 UTC INFO - [rg1-rn1] MasterBalanceStateTracker queue added:MASTER
+2018-12-12 23:56:41.755 UTC INFO - [rg1-rn1] TextIndexFeederStateTracker queue added:MASTER
+2018-12-12 23:56:41.755 UTC INFO - [rg1-rn1] Replicated environment handle established. Cache size: 2672505651, State: MASTER
+2018-12-12 23:56:41.756 UTC INFO - [rg1-rn1] Store did not contain a topology
+2018-12-12 23:56:41.756 UTC INFO - [rg1-rn1] MasterBalanceStateTracker thread start: rg1-rn1
+2018-12-12 23:56:41.756 UTC INFO - [rg1-rn1] MigrationStateTracker thread start: null
+2018-12-12 23:56:41.756 UTC INFO - [rg1-rn1] TableManagerStateTracker thread start: rg1-rn1
+2018-12-12 23:56:41.756 UTC INFO - [rg1-rn1] Table manager change state to MASTER
+2018-12-12 23:56:41.756 UTC INFO - [rg1-rn1] TextIndexFeederStateTracker thread start: rg1-rn1
+2018-12-12 23:56:41.756 UTC INFO - [rg1-rn1] Migration manager change state to MASTER.
+2018-12-12 23:56:41.756 UTC INFO - [rg1-rn1] Topology needs to be pushed to this node.
+2018-12-12 23:56:41.757 UTC INFO - [rg1-rn1] received state change MASTER
+2018-12-12 23:56:41.757 UTC INFO - [rg1-rn1] no text index found, skip starting TIF.
+2018-12-12 23:56:41.766 UTC INFO - [rg1-rn1] Migration service accepting requests.
+2018-12-12 23:56:41.766 UTC INFO - [rg1-rn1] Starting Thread[KV table maintenance,5,]
+2018-12-12 23:56:41.770 UTC INFO - [rg1-rn1] nosqlstore:rg1-rn1:MAIN service port: 62710
+2018-12-12 23:56:42.479 UTC INFO - [admin1] PlanProgress [id=8 name=Deploy KVStore state=RUNNING reportTime=2018-12-12 23:56:42 UTC numAttempts=1 generalTask_Total=9 generalTask_Successful=4 generalTask_NotStarted=5]
+2018-12-12 23:56:41.770 UTC INFO - [rg1-rn1] No RN Login configured. 
+2018-12-12 23:56:41.770 UTC INFO - [rg1-rn1] Service status changed from STARTING to RUNNING
+2018-12-12 23:56:42.480 UTC INFO - [admin1] [rg1-rn1] Service status: RUNNING 2018-12-12 23:56:41 UTC
+2018-12-12 23:56:41.770 UTC INFO - [rg1-rn1] Started RepNodeService
+2018-12-12 23:56:42.448 UTC INFO - [rg1-rn1] Topology updated from seq#: 0 to 4
+2018-12-12 23:56:42.456 UTC INFO - [rg1-rn1] Environment changed, ignoring trigger for SecurityMetadata
+2018-12-12 23:56:42.456 UTC INFO - [rg1-rn1] Open SecurityMetadata DB
+2018-12-12 23:56:42.458 UTC INFO - [rg1-rn1] Established 0 partition database handles, topology seq#: 4
+2018-12-12 23:56:42.459 UTC INFO - [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2018-12-12 23:56:42.459 UTC INFO - [rg1-rn1] Open TableMetadata DB
+2018-12-12 23:56:42.460 UTC INFO - [rg1-rn1] Establishing secondary database handles, table seq#: 0
+2018-12-12 23:56:42.462 UTC INFO - [rg1-rn1] Established 0 secondary database handles
+2018-12-12 23:56:42.463 UTC INFO - [rg1-rn1] Establishing secondary database handles, table seq#: 0
+2018-12-12 23:56:42.463 UTC INFO - [rg1-rn1] Topology stored seq#: 4
+2018-12-12 23:56:42.463 UTC INFO - [rg1-rn1] Updating table metadata with TableMetadata[4, 4, 4]
+2018-12-12 23:56:42.465 UTC INFO - [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2018-12-12 23:56:42.481 UTC INFO - [admin1] Plan 8 [Deploy KVStore] task [UpdateNthRNHelperHost] [4] ended, state=SUCCEEDED
+2018-12-12 23:56:42.465 UTC INFO - [rg1-rn1] Metadata stored type: TABLE, seq#: 4
+2018-12-12 23:56:42.467 UTC INFO - [rg1-rn1] Starting Thread[KV table maintenance,5,]
+2018-12-12 23:56:42.481 UTC INFO - [admin1] Plan 8 [Deploy KVStore] task [NewNthRNParameters] [5] started
+2018-12-12 23:56:42.468 UTC INFO - [rg1-rn1] Establishing secondary database handles, table seq#: 4
+2018-12-12 23:56:42.469 UTC INFO - [rg1-rn1] Established 0 secondary database handles
+2018-12-12 23:56:42.496 UTC INFO - [admin1] PlanProgress [id=8 name=Deploy KVStore state=RUNNING reportTime=2018-12-12 23:56:42 UTC numAttempts=1 generalTask_Total=9 generalTask_Successful=5 generalTask_NotStarted=4]
+2018-12-12 23:56:42.498 UTC INFO - [admin1] Plan 8 [Deploy KVStore] task [NewNthRNParameters] [5] ended, state=SUCCEEDED
+2018-12-12 23:56:42.498 UTC INFO - [admin1] Plan 8 [Deploy KVStore] task [BroadcastTopo] [6] started
+2018-12-12 23:56:42.500 UTC INFO - [admin1] Broadcasting topology seq# 4, changes for plan 8
+2018-12-12 23:56:42.506 UTC INFO - [admin1] PlanProgress [id=8 name=Deploy KVStore state=RUNNING reportTime=2018-12-12 23:56:42 UTC numAttempts=1 generalTask_Total=9 generalTask_Successful=6 generalTask_NotStarted=3]
+2018-12-12 23:56:42.509 UTC INFO - [admin1] Plan 8 [Deploy KVStore] task [BroadcastTopo] [6] ended, state=SUCCEEDED
+2018-12-12 23:56:42.509 UTC INFO - [admin1] Plan 8 [Deploy KVStore] task [BroadcastMetadata] [7] started
+2018-12-12 23:56:42.511 UTC INFO - [admin1] PlanProgress [id=8 name=Deploy KVStore state=RUNNING reportTime=2018-12-12 23:56:42 UTC numAttempts=1 generalTask_Total=9 generalTask_Successful=7 generalTask_NotStarted=2]
+2018-12-12 23:56:42.513 UTC INFO - [admin1] Plan 8 [Deploy KVStore] task [BroadcastMetadata] [7] ended, state=SUCCEEDED
+2018-12-12 23:56:42.513 UTC INFO - [admin1] Plan 8 [Deploy KVStore] task [AddPartitions totalPartitions=10] [8] started
+2018-12-12 23:56:42.520 UTC INFO - [admin1] Broadcasting topology seq# 14, changes for Initializing new partitions
+2018-12-12 23:56:42.538 UTC INFO - [admin1] PlanProgress [id=8 name=Deploy KVStore state=RUNNING reportTime=2018-12-12 23:56:42 UTC numAttempts=1 generalTask_Total=9 generalTask_Successful=8 generalTask_NotStarted=1]
+2018-12-12 23:56:42.540 UTC INFO - [admin1] Plan 8 [Deploy KVStore] task [AddPartitions totalPartitions=10] [8] ended, state=SUCCEEDED
+2018-12-12 23:56:42.540 UTC INFO - [admin1] Plan 8 [Deploy KVStore] task [BroadcastTopo] [9] started
+2018-12-12 23:56:42.543 UTC INFO - [admin1] Broadcasting topology seq# 14, changes for plan 8
+2018-12-12 23:56:42.547 UTC INFO - [admin1] PlanProgress [id=8 name=Deploy KVStore state=RUNNING reportTime=2018-12-12 23:56:42 UTC numAttempts=1 generalTask_Total=9 generalTask_Successful=9]
+2018-12-12 23:56:42.548 UTC INFO - [admin1] Plan 8 [Deploy KVStore] task [BroadcastTopo] [9] ended, state=SUCCEEDED
+2018-12-12 23:56:42.549 UTC INFO - [admin1] PlanStateChange [id=8 name=Deploy KVStore state=SUCCEEDED at 2018-12-12 23:56:42 UTC numAttempts=1 : Plan finished.]
+2018-12-12 23:56:42.550 UTC INFO - [admin1] Plan 8 [Deploy KVStore] ended, state=SUCCEEDED
+2018-12-12 23:56:51.206 UTC INFO - [admin1] Exit Thread[System table monitor,5,RMI Runtime]
+2018-12-12 23:56:41.235 UTC INFO - [sn1] admin1: Creating AdminService
+2018-12-12 23:56:41.255 UTC INFO - [sn1] admin1: Created AdminService
+2018-12-12 23:56:41.405 UTC INFO - [sn1] rg1-rn1: Creating RepNode
+2018-12-12 23:56:41.417 UTC INFO - [sn1] rg1-rn1: Starting RepNode
+2018-12-12 23:56:41.419 UTC INFO - [sn1] rg1-rn1: Started RepNode
+2018-12-12 23:56:41.419 UTC INFO - [sn1] rg1-rn1: Configuring RepNode
+2018-12-12 23:56:41.770 UTC INFO - [sn1] Thread returning for service rg1-rn1
+2018-12-12 23:56:42.468 UTC INFO - [sn1] rg1-rn1: Created RepNode
+2018-12-12 23:56:42.770 UTC INFO - [sn1] noteState called
+2018-12-12 23:56:42.770 UTC INFO - [sn1] added:State RN:rg1-rn1 state: MASTER top seq num: 14
+2018-12-12 23:56:42.771 UTC INFO - [sn1] sn: sn1 state transition: State RN:rg1-rn1 state: MASTER top seq num: 14 active masters:[rg1-rn1] active replicas:0 replica leases:0
+2018-12-12 23:56:42.771 UTC INFO - [sn1] Acquiring initial topology from RNs
+2018-12-12 23:56:42.775 UTC INFO - [sn1] Topology acquired from RN: rg1-rn1 Topo seq#: 14
+2018-12-12 23:56:42.495 UTC INFO - [rg1-rn1] newParameters are identical to old parameters
+2018-12-12 23:56:42.529 UTC INFO - [rg1-rn1] Topology incrementally updated from seq#: 4 to 14
+2018-12-12 23:56:42.532 UTC INFO - [rg1-rn1] Starting Thread[KV table maintenance,5,]
+2018-12-12 23:56:42.532 UTC INFO - [rg1-rn1] Establishing secondary database handles, table seq#: 4
+2018-12-12 23:56:42.534 UTC INFO - [rg1-rn1] Established 0 secondary database handles
+2018-12-12 23:56:42.536 UTC INFO - [rg1-rn1] Topology stored seq#: 14
+2018-12-12 23:56:42.544 UTC INFO - [rg1-rn1] Established 10 partition database handles, topology seq#: 14
+2018-12-13 00:00:51.505 UTC INFO - [admin1] PlanStateChange [id=9 name=CreateTable mytenantId:users state=APPROVED at 2018-12-13 00:00:51 UTC numAttempts=0 : approval requested]
+2018-12-13 00:00:51.505 UTC INFO - [admin1] Plan 9 [CreateTable mytenantId:users] approved
+2018-12-13 00:00:51.506 UTC INFO - [admin1] PlanStateChange [id=9 name=CreateTable mytenantId:users state=RUNNING at 2018-12-13 00:00:51 UTC numAttempts=1 : Plan is starting]
+2018-12-13 00:00:51.506 UTC INFO - [admin1] Plan 9 [CreateTable mytenantId:users] started, 1 tasks
+2018-12-13 00:00:51.507 UTC INFO - [admin1] Plan 9 [CreateTable mytenantId:users] task [AddTable mytenantId:users] [1] started
+2018-12-13 00:00:51.512 UTC INFO - [admin1] Plan 9 [CreateTable mytenantId:users] broadcasting TableMetadata[5, 5, 5] for AddTable mytenantId:users
+2018-12-13 00:00:51.526 UTC INFO - [admin1] Plan 9 [CreateTable mytenantId:users] successful broadcast to all groups of TABLE metadata seq# 5, for AddTable mytenantId:users, attempts=1
+2018-12-13 00:00:51.527 UTC INFO - [admin1] PlanProgress [id=9 name=CreateTable mytenantId:users state=RUNNING reportTime=2018-12-13 00:00:51 UTC numAttempts=1 generalTask_Total=1 generalTask_Successful=1]
+2018-12-13 00:00:51.528 UTC INFO - [admin1] Plan 9 [CreateTable mytenantId:users] task [AddTable mytenantId:users] [1] ended, state=SUCCEEDED
+2018-12-13 00:00:51.528 UTC INFO - [admin1] PlanStateChange [id=9 name=CreateTable mytenantId:users state=SUCCEEDED at 2018-12-13 00:00:51 UTC numAttempts=1 : Plan finished.]
+2018-12-13 00:00:51.529 UTC INFO - [admin1] Plan 9 [CreateTable mytenantId:users] ended, state=SUCCEEDED
+2018-12-13 00:00:51.523 UTC INFO - [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2018-12-13 00:00:51.523 UTC INFO - [rg1-rn1] Metadata stored type: TABLE, seq#: 5
+2018-12-13 00:00:51.526 UTC INFO - [rg1-rn1] Starting Thread[KV table maintenance,5,]
+2018-12-13 00:00:51.526 UTC INFO - [rg1-rn1] Establishing secondary database handles, table seq#: 5
+2018-12-13 00:00:51.527 UTC INFO - [rg1-rn1] Established 0 secondary database handles
+2018-12-13 00:02:00.643 UTC INFO - [admin1] JE: Releasing commit block latch
+2018-12-13 00:01:57.446 UTC INFO - [sn1] noteState called
+2018-12-13 00:01:57.446 UTC INFO - [sn1] added:State RN:rg1-rn1 state: UNKNOWN top seq num: 14
+2018-12-13 00:01:57.446 UTC INFO - [sn1] sn: sn1 state transition: State RN:rg1-rn1 state: UNKNOWN top seq num: 14 active masters:[] active replicas:0 replica leases:0
+2018-12-13 00:01:57.454 UTC INFO - [sn1] noteState called
+2018-12-13 00:01:57.454 UTC INFO - [sn1] added:State RN:rg1-rn1 state: DETACHED top seq num: 14
+2018-12-13 00:01:57.454 UTC INFO - [sn1] sn: sn1 state transition: State RN:rg1-rn1 state: DETACHED top seq num: 14 active masters:[] active replicas:0 replica leases:0
+2018-12-13 00:01:57.464 UTC INFO - [sn1] noteState called
+2018-12-13 00:01:57.464 UTC INFO - [sn1] added:State RN:rg1-rn1 state: DETACHED top seq num: 14
+2018-12-13 00:01:57.465 UTC INFO - [sn1] sn: sn1 state transition: State RN:rg1-rn1 state: DETACHED top seq num: 14 active masters:[] active replicas:0 replica leases:0
+2018-12-13 00:02:01.567 UTC INFO - [admin1] JE: Feeder manager forced shutdown.
+2018-12-13 00:02:01.567 UTC INFO - [admin1] JE: Feeder Manager shutting down feeders. Active and nascent feeders:0 Managed feeders:0
+2018-12-13 00:02:01.568 UTC INFO - [admin1] JE: Feeder Manager completed shutting down feeders.
+2018-12-13 00:02:01.568 UTC INFO - [admin1] JE: Feeder manager exited. CurrentTxnEnd VLSN: 213
+2018-12-13 00:02:01.568 UTC INFO - [admin1] JE: node:NullNode(-1) state change from MASTER to UNKNOWN
+2018-12-13 00:02:01.568 UTC INFO - [admin1] State change event: Thu Dec 13 01:02:01 CET 2018, State: UNKNOWN, Type: PRIMARY, Master: none
+2018-12-13 00:02:01.568 UTC INFO - [admin1] AdminStateTracker queue added:UNKNOWN
+2018-12-13 00:02:01.568 UTC INFO - [admin1] System table monitor soft shutdown initiated.
+2018-12-13 00:02:01.569 UTC INFO - [admin1] JE: RepNode main thread shutting down.
+2018-12-13 00:02:01.569 UTC INFO - [admin1] RuntimeException while entering replica mode, (JE 18.2.14) Environment must be closed, caused by: com.sleepycat.je.EnvironmentFailureException: Environment invalid because of previous exception: (JE 18.2.14) 1(1):nosequeldata/nosqlstore/sn1/admin1/env java.nio.file.NoSuchFileException: /Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/admin1/env UNEXPECTED_EXCEPTION_FATAL: Unexpected internal Exception, unable to continue. Environment is invalid and must be closed.
+2018-12-13 00:02:01.569 UTC INFO - [admin1] JE: RepNode shutdown exception:
+Environment invalid because of previous exception: (JE 18.2.14) 1(1):nosequeldata/nosqlstore/sn1/admin1/env java.nio.file.NoSuchFileException: /Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/admin1/env UNEXPECTED_EXCEPTION_FATAL: Unexpected internal Exception, unable to continue. Environment is invalid and must be closed.1(1)[UNKNOWN] 
+No feeders.
+Group info [nosqlstoreAdmin] 388d7cb6-f33c-4c98-a3de-08ac7c512102
+ Format version: 3
+ Change version: 1
+ Max persist rep node ID: 1
+ Min JE version: 7.5.0
+ Node:1 localhost:5005 (is member) changeVersion:1 LocalCBVLSN:-1 at:Thu Dec 13 00:56:40 CET 2018 jeVersion:18.2.14
+vlsnRange=first=1 last=213 sync=213 txnEnd=213
+lastReplayedTxn=null lastReplayedVLSN=-1 numActiveReplayTxns=0
+
+2018-12-13 00:02:01.569 UTC INFO - [admin1] JE: Shutting down node 1(1) DTVLSN:213
+2018-12-13 00:02:01.570 UTC INFO - [admin1] JE: Elections shutdown initiated
+2018-12-13 00:02:01.570 UTC INFO - [admin1] JE: Acceptor Thread 1 soft shutdown initiated.
+2018-12-13 00:02:01.570 UTC INFO - [admin1] JE: Learner Thread 1 soft shutdown initiated.
+2018-12-13 00:02:01.570 UTC INFO - [admin1] JE: Elections shutdown completed
+2018-12-13 00:02:01.570 UTC INFO - [admin1] JE: RepNode main thread: UNKNOWN 1(1) exited.
+2018-12-13 00:02:01.570 UTC INFO - [admin1] JE: Feeder Manager node: 1 soft shutdown initiated.
+2018-12-13 00:02:01.571 UTC INFO - [admin1] JE: ServiceDispatcher shutdown starting. HostPort=localhost:5005 Registered services: []
+2018-12-13 00:02:01.571 UTC INFO - [admin1] JE: ServiceDispatcher-localhost:5005 soft shutdown initiated.
+2018-12-13 00:02:01.571 UTC INFO - [admin1] JE: ServiceDispatcher shutdown completed. HostPort=localhost:5005
+2018-12-13 00:02:01.571 UTC INFO - [admin1] JE: 1(1) shutdown completed.
+2018-12-13 00:02:01.571 UTC INFO - [admin1] JE: node:NullNode(-1) state change from UNKNOWN to DETACHED
+2018-12-13 00:02:01.571 UTC INFO - [admin1] State change event: Thu Dec 13 01:02:01 CET 2018, State: DETACHED, Type: PRIMARY, Master: none
+2018-12-13 00:02:01.571 UTC INFO - [admin1] AdminStateTracker queue added:DETACHED
+2018-12-13 00:02:01.572 UTC INFO - [admin1] AdminStateTracker thread exited: admin1
+2018-12-13 00:02:01.572 UTC SEVERE - [admin1] Admin shutting down for fault in thread AdminStateTracker
+com.sleepycat.je.EnvironmentFailureException: Environment invalid because of previous exception: (JE 18.2.14) 1(1):nosequeldata/nosqlstore/sn1/admin1/env java.nio.file.NoSuchFileException: /Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/admin1/env UNEXPECTED_EXCEPTION_FATAL: Unexpected internal Exception, unable to continue. Environment is invalid and must be closed. Originally thrown by HA thread: UNKNOWN 1(1)
+	at com.sleepycat.je.EnvironmentFailureException.unexpectedException(EnvironmentFailureException.java:369)
+	at com.sleepycat.je.cleaner.Cleaner.getDiskFreeSpace(Cleaner.java:1199)
+	at com.sleepycat.je.cleaner.Cleaner.freshenLogSizeStats(Cleaner.java:1087)
+	at com.sleepycat.je.cleaner.Cleaner.manageDiskUsage(Cleaner.java:795)
+	at com.sleepycat.je.cleaner.FileProcessor.doClean(FileProcessor.java:365)
+	at com.sleepycat.je.cleaner.FileProcessor.onWakeup(FileProcessor.java:304)
+	at com.sleepycat.je.utilint.DaemonThread.run(DaemonThread.java:154)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.nio.file.NoSuchFileException: /Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/admin1/env
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileStore.readAttributes(UnixFileStore.java:111)
+	at sun.nio.fs.UnixFileStore.getUsableSpace(UnixFileStore.java:124)
+	at com.sleepycat.je.utilint.Java7FileStoreInfo.getUsableSpace(Java7FileStoreInfo.java:70)
+	at com.sleepycat.je.cleaner.Cleaner.getDiskFreeSpace(Cleaner.java:1197)
+	... 6 more
+2018-12-13 00:02:01.576 UTC SEVERE - [admin1] Admin shutting down for fault in thread EventRecorder
+com.sleepycat.je.EnvironmentFailureException: (JE 18.2.14) Environment must be closed, caused by: com.sleepycat.je.EnvironmentFailureException: Environment invalid because of previous exception: (JE 18.2.14) 1(1):nosequeldata/nosqlstore/sn1/admin1/env java.nio.file.NoSuchFileException: /Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/admin1/env UNEXPECTED_EXCEPTION_FATAL: Unexpected internal Exception, unable to continue. Environment is invalid and must be closed. Originally thrown by HA thread: UNKNOWN 1(1)
+	at com.sleepycat.je.EnvironmentFailureException.wrapSelf(EnvironmentFailureException.java:230)
+	at com.sleepycat.je.dbi.EnvironmentImpl.checkIfInvalid(EnvironmentImpl.java:1815)
+	at com.sleepycat.je.dbi.EnvironmentImpl.checkOpen(EnvironmentImpl.java:1824)
+	at com.sleepycat.je.Environment.checkOpen(Environment.java:2697)
+	at com.sleepycat.je.Environment.beginTransactionInternal(Environment.java:1409)
+	at com.sleepycat.je.Environment.beginTransaction(Environment.java:1383)
+	at oracle.kv.impl.admin.Admin$RunTransaction.run(Admin.java:3439)
+	at oracle.kv.impl.admin.Admin.storeEvents(Admin.java:2348)
+	at oracle.kv.impl.admin.criticalevent.EventRecorder.storeLogEvents(EventRecorder.java:288)
+	at oracle.kv.impl.admin.criticalevent.EventRecorder.eventRecorderWorker(EventRecorder.java:249)
+	at oracle.kv.impl.admin.criticalevent.EventRecorder.access$000(EventRecorder.java:44)
+	at oracle.kv.impl.admin.criticalevent.EventRecorder$1.run(EventRecorder.java:98)
+Caused by: com.sleepycat.je.EnvironmentFailureException: Environment invalid because of previous exception: (JE 18.2.14) 1(1):nosequeldata/nosqlstore/sn1/admin1/env java.nio.file.NoSuchFileException: /Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/admin1/env UNEXPECTED_EXCEPTION_FATAL: Unexpected internal Exception, unable to continue. Environment is invalid and must be closed. Originally thrown by HA thread: UNKNOWN 1(1)
+	at com.sleepycat.je.EnvironmentFailureException.unexpectedException(EnvironmentFailureException.java:369)
+	at com.sleepycat.je.cleaner.Cleaner.getDiskFreeSpace(Cleaner.java:1199)
+	at com.sleepycat.je.cleaner.Cleaner.freshenLogSizeStats(Cleaner.java:1087)
+	at com.sleepycat.je.cleaner.Cleaner.manageDiskUsage(Cleaner.java:795)
+	at com.sleepycat.je.cleaner.FileProcessor.doClean(FileProcessor.java:365)
+	at com.sleepycat.je.cleaner.FileProcessor.onWakeup(FileProcessor.java:304)
+	at com.sleepycat.je.utilint.DaemonThread.run(DaemonThread.java:154)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.nio.file.NoSuchFileException: /Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/admin1/env
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileStore.readAttributes(UnixFileStore.java:111)
+	at sun.nio.fs.UnixFileStore.getUsableSpace(UnixFileStore.java:124)
+	at com.sleepycat.je.utilint.Java7FileStoreInfo.getUsableSpace(Java7FileStoreInfo.java:70)
+	at com.sleepycat.je.cleaner.Cleaner.getDiskFreeSpace(Cleaner.java:1197)
+	... 6 more

@@ -1,0 +1,184 @@
+2018-12-12 23:56:41.428 UTC INFO [rg1-rn1] JVM java.net.InetAddress properties: cache.ttl=-1 cache.negative.ttl=-1
+2018-12-12 23:56:41.495 UTC INFO [rg1-rn1] Thread[ rg1-rn1 RepNodeStateUpdateThread,5,RMI Runtime] started
+2018-12-12 23:56:41.520 UTC INFO [rg1-rn1] NoSQL version:18.2.14 2018-10-25 04:45:23 UTC  Build id: 314c08dac9c9 Edition: Enterprise JE version:18.2.14 Java version:1.8.0_191
+2018-12-12 23:56:41.520 UTC INFO [rg1-rn1] JVM Runtime maxMemory:3,728,384 kB JE cache size:0 kB Max Offheap cache size:0 kB
+2018-12-12 23:56:41.520 UTC INFO [rg1-rn1] Non-default JE properties for environment: {je.rep.vlsn.logCacheSize=128, je.rep.envUnknownStateTimeout=10 s, je.env.runVerifier=false, je.log.faultReadSize=4096, je.rep.vlsn.distance=1000000, je.rep.replicaTimeout=3 s, je.env.runEvictor=true, je.rep.repstreamOpenTimeout=2 s, je.cleaner.minUtilization=40, je.rep.replicaAckTimeout=5 s, je.lock.nLockTables=97, je.cleaner.threads=2, je.rep.replayMaxOpenDbHandles=100, je.rep.electionsReadTimeout=2 s, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.rep.heartbeatInterval=500, je.log.iteratorReadSize=1048576, je.log.numBuffers=16, je.rep.feederTimeout=3 s, je.nodeMaxEntries=128, je.lock.timeout=10 s, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.cleaner.minFileUtilization=5, je.rep.electionsOpenTimeout=2 s, je.txn.durability=write_no_sync,write_no_sync,simple_majority, je.cleaner.readSize=1048576, je.rep.ignoreSecondaryNodeId=true, je.rep.txnRollbackLimit=10, je.log.fileCacheSize=2000, je.log.fileMax=1073741824}
+2018-12-12 23:56:41.520 UTC INFO [rg1-rn1] DataChannelFactory: basic
+2018-12-12 23:56:41.522 UTC INFO [rg1-rn1] Created new environment dir: /Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/rg1-rn1/env
+2018-12-12 23:56:41.523 UTC INFO [rg1-rn1] Storage type of: /Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/rg1-rn1/env is UNKNOWN
+2018-12-12 23:56:41.528 UTC INFO [rg1-rn1] Table manager created (max change history=1,000)
+2018-12-12 23:56:41.534 UTC INFO [rg1-rn1] Partition database cache mode: EVICT_LN
+2018-12-12 23:56:41.545 UTC INFO [rg1-rn1] Starting task: interval is 20 SECONDS, delay is 18455(ms)
+2018-12-12 23:56:41.572 UTC INFO [rg1-rn1] Request type ALL is enabled
+2018-12-12 23:56:41.582 UTC INFO [rg1-rn1] Thread[ rg1-rn1 MetadataUpdateThread,5,RMI Runtime] started
+2018-12-12 23:56:41.583 UTC INFO [rg1-rn1] Registering GC listener with PS Scavenge
+2018-12-12 23:56:41.585 UTC INFO [rg1-rn1] Registering GC listener with PS MarkSweep
+2018-12-12 23:56:41.608 UTC INFO [rg1-rn1] Coordinating tasks:KVStorageStats, KVIndexCreationMax real permits:2
+2018-12-12 23:56:41.609 UTC INFO [rg1-rn1] Starting RepNodeService
+2018-12-12 23:56:41.609 UTC INFO [rg1-rn1] Starting RN MonitorAgent.  Server socket factory:<ClearServerSocketFactory backlog=1024 portRange=0,0> Client socket connect factory: <ClientSocketFactory name=nosqlstore|rn|monitor id=-596378244 connectMs=10000 readMs=10000>
+2018-12-12 23:56:41.619 UTC INFO [rg1-rn1] nosqlstore:rg1-rn1:MONITOR service port: 62710
+2018-12-12 23:56:41.620 UTC INFO [rg1-rn1] Starting MonitorAgent
+2018-12-12 23:56:41.637 UTC INFO [rg1-rn1] Successfully created secure proxy for the repnode admin
+2018-12-12 23:56:41.657 UTC INFO [rg1-rn1] nosqlstore:rg1-rn1:ADMIN service port: 62710
+2018-12-12 23:56:41.657 UTC INFO [rg1-rn1] RepNodeAdmin registered
+2018-12-12 23:56:41.689 UTC INFO [rg1-rn1] JE recovery: POPULATE_UTILIZATION_PROFILE
+2018-12-12 23:56:41.691 UTC INFO [rg1-rn1] JE recovery: POPULATE_EXPIRATION_PROFILE
+2018-12-12 23:56:41.692 UTC INFO [rg1-rn1] JE recovery: REMOVE_TEMP_DBS
+2018-12-12 23:56:41.693 UTC INFO [rg1-rn1] JE recovery: CKPT
+2018-12-12 23:56:41.700 UTC INFO [rg1-rn1] JE recovery: RECOVERY_FINISHED
+2018-12-12 23:56:41.707 UTC INFO [rg1-rn1] JE: No server auth method
+2018-12-12 23:56:41.708 UTC INFO [rg1-rn1] JE: Started ServiceDispatcher. HostPort=localhost:5006
+2018-12-12 23:56:41.709 UTC INFO [rg1-rn1] JE: DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2018-12-12 23:56:41.711 UTC INFO [rg1-rn1] JE: DTVLSN at start:0
+2018-12-12 23:56:41.711 UTC INFO [rg1-rn1] JE: node:NullNode(-1) state change from DETACHED to UNKNOWN
+2018-12-12 23:56:41.713 UTC INFO [rg1-rn1] JE: Current group size: 0
+2018-12-12 23:56:41.714 UTC INFO [rg1-rn1] JE: New node rg1-rn1(-1) unknown to rep group
+2018-12-12 23:56:41.715 UTC INFO [rg1-rn1] JE: Master changed to rg1-rn1
+2018-12-12 23:56:41.715 UTC INFO [rg1-rn1] JE: Nascent group. rg1-rn1 is master by virtue of being the first node.
+2018-12-12 23:56:41.715 UTC INFO [rg1-rn1] JE: node:rg1-rn1(1) state change from UNKNOWN to MASTER
+2018-12-12 23:56:41.721 UTC INFO [rg1-rn1] JE: Successfully added node:rg1-rn1(1) HostPort = localhost: 5006 [ELECTABLE]
+2018-12-12 23:56:41.723 UTC INFO [rg1-rn1] JE: Updated minimum JE group version to 7.5.0
+2018-12-12 23:56:41.724 UTC INFO [rg1-rn1] JE recovery: BECOME_CONSISTENT
+2018-12-12 23:56:41.724 UTC INFO [rg1-rn1] JE: Node rg1-rn1 started
+2018-12-12 23:56:41.725 UTC INFO [rg1-rn1] JE: node:NullNode(-1) state change from MASTER to UNKNOWN
+2018-12-12 23:56:41.725 UTC INFO [rg1-rn1] JE: node:rg1-rn1(1) state change from UNKNOWN to MASTER
+2018-12-12 23:56:41.726 UTC INFO [rg1-rn1] JE: Feeder manager accepting requests.
+2018-12-12 23:56:41.726 UTC INFO [rg1-rn1] JE: Joining group as master
+2018-12-12 23:56:41.727 UTC INFO [rg1-rn1] Opened JE environment: 18.2.14 JVM max heap: 3,817,865,216 JE properties:  nodeName=null allowCreate=true recoveryProgressListener=true classLoader=false customStats=false cacheSize=2672505651 offHeapCacheSize=0 cacheMode=EVICT_LN txnNoSync=false txnWriteNoSync=false exceptionListener=false map={je.lock.timeout=10 s, je.cleaner.minFileUtilization=5, je.cleaner.readSize=1048576, je.log.faultReadSize=4096, je.rep.consistencyPolicy=NoConsistencyRequiredPolicy, je.log.fileMax=1073741824, je.rep.feederTimeout=3 s, je.rep.node.priority=1, je.file.logging.prefix=rg1-rn1, je.rep.nodeName=rg1-rn1, je.nodeMaxEntries=128, je.log.writeQueueSize=2097152, je.evictor.criticalPercentage=20, je.maxDisk=1073741824, je.maxMemoryPercent=70, je.env.runVerifier=false, je.rep.electableGroupSizeOverride=0, je.rep.electionsReadTimeout=2 s, je.env.runEvictor=true, je.log.iteratorReadSize=1048576, je.rep.heartbeatInterval=500, je.txn.durability=WRITE_NO_SYNC,WRITE_NO_SYNC,SIMPLE_MAJORITY, je.maxOffHeapMemory=0, je.checkpointer.bytesInterval=500000000, je.log.numBuffers=16, je.rep.nodeHostPort=localhost:5006, je.rep.vlsn.distance=1000000, je.rep.txnRollbackLimit=10, je.rep.replayMaxOpenDbHandles=100, je.rep.ignoreSecondaryNodeId=true, je.maxMemory=0, je.file.logging.directory=nosequeldata/nosqlstore/log, je.cleaner.minUtilization=40, je.env.isTransactional=true, je.log.fileCacheSize=2000, je.rep.repstreamOpenTimeout=2 s, je.rep.helperHosts=localhost:5006, je.rep.preHeartbeatTimeoutMs=5000000000, je.rep.vlsn.logCacheSize=128, je.rep.replicaTimeout=3 s, je.lock.nLockTables=97, je.rep.nodeType=ELECTABLE, je.rep.electionsOpenTimeout=2 s, je.rep.envUnknownStateTimeout=10 s, je.rep.preserveRecordVersion=true, je.rep.groupName=rg1, je.rep.replicaAckTimeout=5 s, je.cleaner.threads=2}
+2018-12-12 23:56:41.754 UTC INFO [rg1-rn1] Local Environment version updated to: 18.2.14 2018-10-25 04:45:23 UTC  Build id: 314c08dac9c9 Edition: Enterprise Previous version:  none
+2018-12-12 23:56:41.755 UTC INFO [rg1-rn1] State change event: Thu Dec 13 00:56:41 CET 2018, State: MASTER, Type: ELECTABLE, Master: rg1-rn1
+2018-12-12 23:56:41.755 UTC INFO [rg1-rn1] MigrationStateTracker queue added:MASTER
+2018-12-12 23:56:41.755 UTC INFO [rg1-rn1] TableManagerStateTracker queue added:MASTER
+2018-12-12 23:56:41.755 UTC INFO [rg1-rn1] MasterBalanceStateTracker queue added:MASTER
+2018-12-12 23:56:41.755 UTC INFO [rg1-rn1] TextIndexFeederStateTracker queue added:MASTER
+2018-12-12 23:56:41.755 UTC INFO [rg1-rn1] Replicated environment handle established. Cache size: 2672505651, State: MASTER
+2018-12-12 23:56:41.756 UTC INFO [rg1-rn1] Store did not contain a topology
+2018-12-12 23:56:41.756 UTC INFO [rg1-rn1] MasterBalanceStateTracker thread start: rg1-rn1
+2018-12-12 23:56:41.756 UTC INFO [rg1-rn1] MigrationStateTracker thread start: null
+2018-12-12 23:56:41.756 UTC INFO [rg1-rn1] TableManagerStateTracker thread start: rg1-rn1
+2018-12-12 23:56:41.756 UTC INFO [rg1-rn1] Table manager change state to MASTER
+2018-12-12 23:56:41.756 UTC INFO [rg1-rn1] TextIndexFeederStateTracker thread start: rg1-rn1
+2018-12-12 23:56:41.756 UTC INFO [rg1-rn1] Migration manager change state to MASTER.
+2018-12-12 23:56:41.756 UTC INFO [rg1-rn1] Topology needs to be pushed to this node.
+2018-12-12 23:56:41.757 UTC INFO [rg1-rn1] received state change MASTER
+2018-12-12 23:56:41.757 UTC INFO [rg1-rn1] no text index found, skip starting TIF.
+2018-12-12 23:56:41.766 UTC INFO [rg1-rn1] Migration service accepting requests.
+2018-12-12 23:56:41.766 UTC INFO [rg1-rn1] Starting Thread[KV table maintenance,5,RMI Runtime]
+2018-12-12 23:56:41.770 UTC INFO [rg1-rn1] nosqlstore:rg1-rn1:MAIN service port: 62710
+2018-12-12 23:56:41.770 UTC INFO [rg1-rn1] No RN Login configured. 
+2018-12-12 23:56:41.770 UTC INFO [rg1-rn1] Service status changed from STARTING to RUNNING
+2018-12-12 23:56:41.770 UTC INFO [rg1-rn1] Started RepNodeService
+2018-12-12 23:56:42.448 UTC INFO [rg1-rn1] Topology updated from seq#: 0 to 4
+2018-12-12 23:56:42.456 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for SecurityMetadata
+2018-12-12 23:56:42.456 UTC INFO [rg1-rn1] Open SecurityMetadata DB
+2018-12-12 23:56:42.458 UTC INFO [rg1-rn1] Established 0 partition database handles, topology seq#: 4
+2018-12-12 23:56:42.459 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2018-12-12 23:56:42.459 UTC INFO [rg1-rn1] Open TableMetadata DB
+2018-12-12 23:56:42.460 UTC INFO [rg1-rn1] Establishing secondary database handles, table seq#: 0
+2018-12-12 23:56:42.462 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2018-12-12 23:56:42.463 UTC INFO [rg1-rn1] Establishing secondary database handles, table seq#: 0
+2018-12-12 23:56:42.463 UTC INFO [rg1-rn1] Topology stored seq#: 4
+2018-12-12 23:56:42.463 UTC INFO [rg1-rn1] Updating table metadata with TableMetadata[4, 4, 4]
+2018-12-12 23:56:42.465 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2018-12-12 23:56:42.465 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 4
+2018-12-12 23:56:42.467 UTC INFO [rg1-rn1] Starting Thread[KV table maintenance,5,RMI Runtime]
+2018-12-12 23:56:42.468 UTC INFO [rg1-rn1] Establishing secondary database handles, table seq#: 4
+2018-12-12 23:56:42.469 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2018-12-12 23:56:42.495 UTC INFO [rg1-rn1] newParameters are identical to old parameters
+2018-12-12 23:56:42.529 UTC INFO [rg1-rn1] Topology incrementally updated from seq#: 4 to 14
+2018-12-12 23:56:42.532 UTC INFO [rg1-rn1] Starting Thread[KV table maintenance,5,RMI Runtime]
+2018-12-12 23:56:42.532 UTC INFO [rg1-rn1] Establishing secondary database handles, table seq#: 4
+2018-12-12 23:56:42.534 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2018-12-12 23:56:42.536 UTC INFO [rg1-rn1] Topology stored seq#: 14
+2018-12-12 23:56:42.544 UTC INFO [rg1-rn1] Established 10 partition database handles, topology seq#: 14
+2018-12-13 00:00:51.523 UTC INFO [rg1-rn1] Environment changed, ignoring trigger for TableMetadata
+2018-12-13 00:00:51.523 UTC INFO [rg1-rn1] Metadata stored type: TABLE, seq#: 5
+2018-12-13 00:00:51.526 UTC INFO [rg1-rn1] Starting Thread[KV table maintenance,5,RMI Runtime]
+2018-12-13 00:00:51.526 UTC INFO [rg1-rn1] Establishing secondary database handles, table seq#: 5
+2018-12-13 00:00:51.527 UTC INFO [rg1-rn1] Established 0 secondary database handles
+2018-12-13 00:01:57.374 UTC SEVERE [rg1-rn1] JE: rg1-rn1(1):/Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/rg1-rn1/env:FileDeletionDetector exited unexpectedly with exception java.io.IOException: Directory /Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/rg1-rn1/env does not exist now. Something abnormal may happen.java.io.IOException: Directory /Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/rg1-rn1/env does not exist now. Something abnormal may happen.
+	at com.sleepycat.je.log.FileDeletionDetector.processLogFileDeleteEvents(FileDeletionDetector.java:248)
+	at com.sleepycat.je.log.FileDeletionDetector.access$100(FileDeletionDetector.java:42)
+	at com.sleepycat.je.log.FileDeletionDetector$FileDeleteDetectTask.run(FileDeletionDetector.java:166)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+2018-12-13 00:01:57.375 UTC INFO [rg1-rn1] JE: Releasing commit block latch
+2018-12-13 00:01:57.442 UTC INFO [rg1-rn1] JE: Feeder manager forced shutdown.
+2018-12-13 00:01:57.443 UTC INFO [rg1-rn1] JE: Feeder Manager shutting down feeders. Active and nascent feeders:0 Managed feeders:0
+2018-12-13 00:01:57.444 UTC INFO [rg1-rn1] JE: Feeder Manager completed shutting down feeders.
+2018-12-13 00:01:57.445 UTC INFO [rg1-rn1] JE: Feeder manager exited. CurrentTxnEnd VLSN: 51
+2018-12-13 00:01:57.445 UTC INFO [rg1-rn1] JE: node:NullNode(-1) state change from MASTER to UNKNOWN
+2018-12-13 00:01:57.445 UTC INFO [rg1-rn1] State change event: Thu Dec 13 01:01:57 CET 2018, State: UNKNOWN, Type: ELECTABLE, Master: none
+2018-12-13 00:01:57.445 UTC INFO [rg1-rn1] MigrationStateTracker queue added:UNKNOWN
+2018-12-13 00:01:57.445 UTC INFO [rg1-rn1] Migration manager change state to UNKNOWN.
+2018-12-13 00:01:57.445 UTC INFO [rg1-rn1] Table manager change state to UNKNOWN
+2018-12-13 00:01:57.445 UTC INFO [rg1-rn1] TableManagerStateTracker queue added:UNKNOWN
+2018-12-13 00:01:57.445 UTC INFO [rg1-rn1] MasterBalanceStateTracker queue added:UNKNOWN
+2018-12-13 00:01:57.445 UTC INFO [rg1-rn1] Stopping MigrationService[false, 0, 0]
+2018-12-13 00:01:57.445 UTC INFO [rg1-rn1] received state change UNKNOWN
+2018-12-13 00:01:57.445 UTC INFO [rg1-rn1] TextIndexFeederStateTracker queue added:UNKNOWN
+2018-12-13 00:01:57.446 UTC INFO [rg1-rn1] JE: RepNode main thread shutting down.
+2018-12-13 00:01:57.447 UTC INFO [rg1-rn1] JE: RepNode shutdown exception:
+(JE 18.2.14) rg1-rn1(1):/Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/rg1-rn1/env java.io.IOException: Directory /Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/rg1-rn1/env does not exist now. Something abnormal may happen. UNCAUGHT_EXCEPTION: Uncaught Exception in internal thread, unable to continue. Environment is invalid and must be closed.rg1-rn1(1)[UNKNOWN] 
+No feeders.
+Group info [rg1] fb6aa27a-4cd5-4cc1-90c3-a02f79ff64fc
+ Format version: 3
+ Change version: 1
+ Max persist rep node ID: 1
+ Min JE version: 7.5.0
+ Node:rg1-rn1 localhost:5006 (is member) changeVersion:1 LocalCBVLSN:-1 at:Thu Dec 13 00:56:41 CET 2018 jeVersion:18.2.14
+vlsnRange=first=1 last=51 sync=51 txnEnd=51
+lastReplayedTxn=null lastReplayedVLSN=-1 numActiveReplayTxns=0
+
+2018-12-13 00:01:57.447 UTC INFO [rg1-rn1] JE: Shutting down node rg1-rn1(1) DTVLSN:51
+2018-12-13 00:01:57.447 UTC INFO [rg1-rn1] JE: Elections shutdown initiated
+2018-12-13 00:01:57.448 UTC INFO [rg1-rn1] KV table maintenance soft shutdown initiated.
+2018-12-13 00:01:57.449 UTC INFO [rg1-rn1] JE: Acceptor Thread rg1-rn1 soft shutdown initiated.
+2018-12-13 00:01:57.449 UTC INFO [rg1-rn1] JE: Learner Thread rg1-rn1 soft shutdown initiated.
+2018-12-13 00:01:57.449 UTC INFO [rg1-rn1] JE: Elections shutdown completed
+2018-12-13 00:01:57.449 UTC INFO [rg1-rn1] JE: RepNode main thread: UNKNOWN rg1-rn1(1) exited.
+2018-12-13 00:01:57.449 UTC INFO [rg1-rn1] JE: Feeder Manager node: rg1-rn1 soft shutdown initiated.
+2018-12-13 00:01:57.450 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown starting. HostPort=localhost:5006 Registered services: []
+2018-12-13 00:01:57.450 UTC INFO [rg1-rn1] JE: ServiceDispatcher-localhost:5006 soft shutdown initiated.
+2018-12-13 00:01:57.451 UTC INFO [rg1-rn1] JE: ServiceDispatcher shutdown completed. HostPort=localhost:5006
+2018-12-13 00:01:57.451 UTC INFO [rg1-rn1] JE: rg1-rn1(1) shutdown completed.
+2018-12-13 00:01:57.452 UTC INFO [rg1-rn1] JE: node:NullNode(-1) state change from UNKNOWN to DETACHED
+2018-12-13 00:01:57.452 UTC INFO [rg1-rn1] State change event: Thu Dec 13 01:01:57 CET 2018, State: DETACHED, Type: ELECTABLE, Master: none
+2018-12-13 00:01:57.452 UTC INFO [rg1-rn1] Exiting process.  Node in detached state, environment invalid. Exception class: com.sleepycat.je.EnvironmentFailureException Exception message: (JE 18.2.14) rg1-rn1(1):/Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/rg1-rn1/env java.io.IOException: Directory /Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/rg1-rn1/env does not exist now. Something abnormal may happen. UNCAUGHT_EXCEPTION: Uncaught Exception in internal thread, unable to continue. Environment is invalid and must be closed. Originally thrown by HA thread: UNKNOWN rg1-rn1(1)
+2018-12-13 00:01:57.453 UTC INFO [rg1-rn1] MigrationStateTracker queue added:DETACHED
+2018-12-13 00:01:57.453 UTC INFO [rg1-rn1] Migration manager change state to DETACHED.
+2018-12-13 00:01:57.453 UTC INFO [rg1-rn1] Service status changed from RUNNING to STOPPING
+2018-12-13 00:01:57.453 UTC INFO [rg1-rn1] Table manager change state to DETACHED
+2018-12-13 00:01:57.453 UTC INFO [rg1-rn1] TableManagerStateTracker queue added:DETACHED
+2018-12-13 00:01:57.453 UTC INFO [rg1-rn1] MasterBalanceStateTracker queue added:DETACHED
+2018-12-13 00:01:57.453 UTC INFO [rg1-rn1] TextIndexFeederStateTracker queue added:DETACHED
+2018-12-13 00:01:57.453 UTC INFO [rg1-rn1] received state change DETACHED
+2018-12-13 00:01:57.454 UTC INFO [rg1-rn1] Thread[ rg1-rn1 RepNodeStateUpdateThread,5,RMI Runtime] shutdown
+2018-12-13 00:01:57.454 UTC INFO [rg1-rn1] Dispatcher shutdown
+2018-12-13 00:01:57.457 UTC INFO [rg1-rn1] RepNodeAdmin stopping
+2018-12-13 00:01:57.457 UTC INFO [rg1-rn1] Thread[ rg1-rn1 MetadataUpdateThread,5,RMI Runtime] shutdown
+2018-12-13 00:01:57.457 UTC INFO [rg1-rn1] Shutting down RepNode(force)
+2018-12-13 00:01:57.457 UTC INFO [rg1-rn1] Shutting down migration manager.
+2018-12-13 00:01:57.457 UTC INFO [rg1-rn1] Ignoring exception closing migration database  Exception:com.sleepycat.je.EnvironmentFailureException Message:(JE 18.2.14) Environment must be closed, caused by: com.sleepycat.je.EnvironmentFailureException: Environment invalid because of previous exception: (JE 18.2.14) rg1-rn1(1):/Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/rg1-rn1/env java.io.IOException: Directory /Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/rg1-rn1/env does not exist now. Something abnormal may happen. UNCAUGHT_EXCEPTION: Uncaught Exception in internal thread, unable to continue. Environment is invalid and must be closed. Originally thrown by HA thread: UNKNOWN rg1-rn1(1)
+2018-12-13 00:01:57.457 UTC INFO [rg1-rn1] MigrationStateTracker soft shutdown initiated.
+2018-12-13 00:01:57.458 UTC INFO [rg1-rn1] MigrationStateTracker queue added:DETACHED
+2018-12-13 00:01:57.458 UTC INFO [rg1-rn1] MigrationStateTracker thread exited: null
+2018-12-13 00:01:57.458 UTC INFO [rg1-rn1] TableManagerStateTracker soft shutdown initiated.
+2018-12-13 00:01:57.458 UTC INFO [rg1-rn1] TableManagerStateTracker queue added:DETACHED
+2018-12-13 00:01:57.458 UTC INFO [rg1-rn1] Table manager change state to DETACHED
+2018-12-13 00:01:57.458 UTC INFO [rg1-rn1] TableManagerStateTracker thread exited: rg1-rn1
+2018-12-13 00:01:57.458 UTC INFO [rg1-rn1] TIF manager at rg1-rn1 has shutdown.
+2018-12-13 00:01:57.458 UTC INFO [rg1-rn1] Closing secondary database handles
+2018-12-13 00:01:57.458 UTC INFO [rg1-rn1] Closing TableMetadata db
+2018-12-13 00:01:57.458 UTC INFO [rg1-rn1] Ignoring exception closing TableMetadata database  Exception:com.sleepycat.je.EnvironmentFailureException Message:(JE 18.2.14) Environment must be closed, caused by: com.sleepycat.je.EnvironmentFailureException: Environment invalid because of previous exception: (JE 18.2.14) rg1-rn1(1):/Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/rg1-rn1/env java.io.IOException: Directory /Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/rg1-rn1/env does not exist now. Something abnormal may happen. UNCAUGHT_EXCEPTION: Uncaught Exception in internal thread, unable to continue. Environment is invalid and must be closed. Originally thrown by HA thread: UNKNOWN rg1-rn1(1)
+2018-12-13 00:01:57.458 UTC INFO [rg1-rn1] Closing partition database handles
+2018-12-13 00:01:57.458 UTC INFO [rg1-rn1] Closing SecurityMetadata db
+2018-12-13 00:01:57.458 UTC INFO [rg1-rn1] Ignoring exception closing SecurityMetadata database  Exception:com.sleepycat.je.EnvironmentFailureException Message:(JE 18.2.14) Environment must be closed, caused by: com.sleepycat.je.EnvironmentFailureException: Environment invalid because of previous exception: (JE 18.2.14) rg1-rn1(1):/Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/rg1-rn1/env java.io.IOException: Directory /Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/rg1-rn1/env does not exist now. Something abnormal may happen. UNCAUGHT_EXCEPTION: Uncaught Exception in internal thread, unable to continue. Environment is invalid and must be closed. Originally thrown by HA thread: UNKNOWN rg1-rn1(1)
+2018-12-13 00:01:57.460 UTC INFO [rg1-rn1] JE: JEErasure soft shutdown initiated.
+2018-12-13 00:01:57.464 UTC INFO [rg1-rn1] MasterBalanceStateTracker soft shutdown initiated.
+2018-12-13 00:01:57.464 UTC INFO [rg1-rn1] MasterBalanceStateTracker queue added:DETACHED
+2018-12-13 00:01:57.465 UTC INFO [rg1-rn1] MasterBalanceStateTracker thread exited: rg1-rn1
+2018-12-13 00:01:57.465 UTC INFO [rg1-rn1] Service status changed from STOPPING to STOPPED
+2018-12-13 00:01:57.465 UTC INFO [rg1-rn1] MonitorAgent stopping, 70 items remain.
+2018-12-13 00:01:57.466 UTC INFO [rg1-rn1] Saving untransmitted monitor info at shutdown.

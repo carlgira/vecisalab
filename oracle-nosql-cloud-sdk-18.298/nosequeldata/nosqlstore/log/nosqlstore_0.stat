@@ -1,0 +1,317 @@
+2018-12-12 23:57:02.515 UTC INFO [nosqlstore] rg1-rn1 (23:56:41.545 UTC -> 23:57:00.002 UTC)
+I/O
+	bufferBytes=16,777,216
+	endOfLog=0x0/0x4393
+	nFSyncMaxTime=1
+	nFSyncRequests=7
+	nFSyncTime=2
+	nFSyncs=7
+	nFileOpens=4
+	nGroupCommitRequests=25
+	nLogBuffers=16
+	nLogFSyncs=11
+	nRandomWriteBytes=38
+	nRandomWrites=1
+	nSequentialReadBytes=12,288
+	nSequentialReads=3
+	nSequentialWriteBytes=17,294
+	nSequentialWrites=27
+Cache
+	adminBytes=589
+	cacheTotalBytes=16,827,173
+	dataBytes=47,912
+	lockBytes=1,456
+	lruMixedSize=7
+	nBINsFetch=95
+	nCachedBINs=7
+	nCachedUpperINs=7
+	nINNoTarget=4
+	nINSparseTarget=8
+	nLNsFetch=25
+Cleaning
+	activeLogSize=1,412
+	availableLogSize=1,073,740,412
+	maxPredictedUtilization=57
+	maxUtilization=57
+	minPredictedUtilization=57
+	minUtilization=57
+	totalLogSize=1,412
+Checkpoints
+	lastCheckpointEnd=0x0/0x552
+	lastCheckpointId=1
+	lastCheckpointInterval=734
+	lastCheckpointStart=0x0/0x2de
+	nCheckpoints=1
+	nFullBINFlush=2
+	nFullINFlush=4
+Environment
+	environmentCreationTime=1,544,659,001,663
+Locks
+	nOwners=13
+	nReadLocks=13
+	nRequests=95
+	nTotalLocks=13
+Op
+	priInsert=3
+	priSearchFail=17
+	priUpdate=1
+Eraser
+	eraserCycleEnd=
+	eraserCycleStart=
+
+2018-12-12 23:57:02.515 UTC INFO [nosqlstore] rg1-rn1 (23:56:41.545 UTC -> 23:57:00.002 UTC)
+FeederManager
+	nMaxReplicaLag=NONE
+FeederTxns
+	lastCommitTimestamp=1,544,659,004,730
+	lastCommitVLSN=42
+	vlsnRate=986
+Replay
+	maxCommitProcessingNanos=NONE
+	minCommitProcessingNanos=NONE
+BinaryProtocol
+	bytesReadPerSecond=0
+	bytesWrittenPerSecond=0
+	messagesReadPerSecond=0
+	messagesWrittenPerSecond=0
+VLSNIndex
+	nBucketsCreated=1
+
+2018-12-12 23:57:02.516 UTC INFO [nosqlstore] rg1-rn1 (23:56:41.545 UTC -> 23:57:00.002 UTC)
+Replication State: MASTER
+2018-12-12 23:57:02.516 UTC INFO [nosqlstore] rg1-rn1 (23:56:41.545 UTC -> 23:57:00.002 UTC)
+Memory
+	freeMemory=306732792
+	maxMemory=3817865216
+	totalMemory=378535936
+	pauseCount=4
+	pause95th=11
+	pause99th=11
+	pauseMax=85
+GC PS Scavenge
+	count=5
+	time=56
+GC PS MarkSweep
+	count=3
+	time=99
+
+2018-12-12 23:57:22.475 UTC INFO [nosqlstore] rg1-rn1 (23:57:00.002 UTC -> 23:57:20.002 UTC)
+Replication State: MASTER
+2018-12-12 23:57:22.475 UTC INFO [nosqlstore] rg1-rn1 (23:57:00.002 UTC -> 23:57:20.002 UTC)
+Memory
+	freeMemory=300804672
+	maxMemory=3817865216
+	totalMemory=378535936
+	pauseCount=1
+	pause95th=2
+	pause99th=2
+	pauseMax=2
+
+2018-12-12 23:57:42.475 UTC INFO [nosqlstore] rg1-rn1 (23:57:20.002 UTC -> 23:57:40.002 UTC)
+Replication State: MASTER
+2018-12-12 23:57:42.475 UTC INFO [nosqlstore] rg1-rn1 (23:57:20.002 UTC -> 23:57:40.002 UTC)
+Memory
+	freeMemory=299944384
+	maxMemory=3817865216
+	totalMemory=378535936
+	pauseCount=2
+	pause95th=2
+	pause99th=2
+	pauseMax=2
+
+2018-12-12 23:58:02.474 UTC INFO [nosqlstore] rg1-rn1 (23:57:40.002 UTC -> 23:58:00.005 UTC)
+Replication State: MASTER
+2018-12-12 23:58:02.474 UTC INFO [nosqlstore] rg1-rn1 (23:57:40.002 UTC -> 23:58:00.005 UTC)
+Memory
+	freeMemory=293209136
+	maxMemory=3817865216
+	totalMemory=378535936
+	pauseCount=1
+	pause95th=2
+	pause99th=2
+	pauseMax=2
+
+2018-12-12 23:58:22.478 UTC INFO [nosqlstore] rg1-rn1 (23:58:00.005 UTC -> 23:58:20.006 UTC)
+Replication State: MASTER
+2018-12-12 23:58:22.478 UTC INFO [nosqlstore] rg1-rn1 (23:58:00.005 UTC -> 23:58:20.006 UTC)
+Memory
+	freeMemory=292150464
+	maxMemory=3817865216
+	totalMemory=378535936
+	pauseCount=2
+	pause95th=2
+	pause99th=2
+	pauseMax=2
+
+2018-12-12 23:58:42.474 UTC INFO [nosqlstore] rg1-rn1 (23:58:20.006 UTC -> 23:58:40.004 UTC)
+Replication State: MASTER
+2018-12-12 23:58:42.475 UTC INFO [nosqlstore] rg1-rn1 (23:58:20.006 UTC -> 23:58:40.004 UTC)
+Memory
+	freeMemory=290957648
+	maxMemory=3817865216
+	totalMemory=378535936
+	pauseCount=1
+	pause95th=2
+	pause99th=2
+	pauseMax=2
+
+2018-12-12 23:59:02.475 UTC INFO [nosqlstore] rg1-rn1 (23:58:40.004 UTC -> 23:59:00.005 UTC)
+Replication State: MASTER
+2018-12-12 23:59:02.475 UTC INFO [nosqlstore] rg1-rn1 (23:58:40.004 UTC -> 23:59:00.005 UTC)
+Memory
+	freeMemory=289314120
+	maxMemory=3817865216
+	totalMemory=378535936
+	pauseCount=4
+	pause95th=2
+	pause99th=2
+	pauseMax=8
+
+2018-12-12 23:59:22.480 UTC INFO [nosqlstore] rg1-rn1 (23:59:00.005 UTC -> 23:59:20.006 UTC)
+Replication State: MASTER
+2018-12-12 23:59:22.480 UTC INFO [nosqlstore] rg1-rn1 (23:59:00.005 UTC -> 23:59:20.006 UTC)
+Memory
+	freeMemory=287916528
+	maxMemory=3817865216
+	totalMemory=378535936
+
+2018-12-12 23:59:42.476 UTC INFO [nosqlstore] rg1-rn1 (23:59:20.006 UTC -> 23:59:40.004 UTC)
+Replication State: MASTER
+2018-12-12 23:59:42.476 UTC INFO [nosqlstore] rg1-rn1 (23:59:20.006 UTC -> 23:59:40.004 UTC)
+Memory
+	freeMemory=287080824
+	maxMemory=3817865216
+	totalMemory=378535936
+	pauseCount=3
+	pause95th=2
+	pause99th=2
+	pauseMax=2
+
+2018-12-13 00:00:02.479 UTC INFO [nosqlstore] rg1-rn1 (23:59:40.004 UTC -> 00:00:00.007 UTC)
+Replication State: MASTER
+2018-12-13 00:00:02.479 UTC INFO [nosqlstore] rg1-rn1 (23:59:40.004 UTC -> 00:00:00.007 UTC)
+Memory
+	freeMemory=284988104
+	maxMemory=3817865216
+	totalMemory=378535936
+
+2018-12-13 00:00:22.479 UTC INFO [nosqlstore] rg1-rn1 (00:00:00.007 UTC -> 00:00:20.007 UTC)
+Replication State: MASTER
+2018-12-13 00:00:22.479 UTC INFO [nosqlstore] rg1-rn1 (00:00:00.007 UTC -> 00:00:20.007 UTC)
+Memory
+	freeMemory=283392024
+	maxMemory=3817865216
+	totalMemory=378535936
+
+2018-12-13 00:00:42.478 UTC INFO [nosqlstore] rg1-rn1 (00:00:20.007 UTC -> 00:00:40.007 UTC)
+Replication State: MASTER
+2018-12-13 00:00:42.478 UTC INFO [nosqlstore] rg1-rn1 (00:00:20.007 UTC -> 00:00:40.007 UTC)
+Memory
+	freeMemory=282359216
+	maxMemory=3817865216
+	totalMemory=378535936
+
+2018-12-13 00:01:02.496 UTC INFO [nosqlstore] rg1-rn1 (00:00:40.007 UTC -> 00:01:00.009 UTC)
+I/O
+	bufferBytes=16,777,216
+	endOfLog=0x0/0x5976
+	nFSyncRequests=1
+	nFSyncs=1
+	nGroupCommitRequests=2
+	nLogBuffers=16
+	nLogFSyncs=1
+	nNotResident=2
+	nSequentialWriteBytes=5,603
+	nSequentialWrites=3
+Cache
+	adminBytes=589
+	cacheTotalBytes=16,833,221
+	dataBytes=53,960
+	lockBytes=1,456
+	lruMixedSize=9
+	nBINsFetch=16
+	nCachedBINs=9
+	nCachedUpperINs=9
+	nINNoTarget=6
+	nINSparseTarget=10
+	nLNsFetch=5
+	nLNsFetchMiss=2
+Cleaning
+	activeLogSize=17,332
+	availableLogSize=1,073,724,492
+	maxPredictedUtilization=73
+	maxUtilization=73
+	minPredictedUtilization=73
+	minUtilization=73
+	totalLogSize=17,332
+Node Compression
+	processedBins=1
+Checkpoints
+	lastCheckpointEnd=0x0/0x552
+	lastCheckpointId=1
+	lastCheckpointInterval=734
+	lastCheckpointStart=0x0/0x2de
+Environment
+	environmentCreationTime=1,544,659,001,663
+Locks
+	nOwners=13
+	nReadLocks=13
+	nRequests=16
+	nTotalLocks=13
+Op
+	priDelete=1
+	priInsert=2
+	priSearch=6
+	priSearchFail=21
+	priUpdate=1
+Eraser
+	eraserCycleEnd=
+	eraserCycleStart=
+
+2018-12-13 00:01:02.497 UTC INFO [nosqlstore] rg1-rn1 (00:00:40.007 UTC -> 00:01:00.009 UTC)
+FeederTxns
+	lastCommitTimestamp=1,544,659,254,305
+	lastCommitVLSN=51
+	vlsnRate=898
+BinaryProtocol
+	bytesReadPerSecond=0
+	bytesWrittenPerSecond=0
+	messagesReadPerSecond=0
+	messagesWrittenPerSecond=0
+
+2018-12-13 00:01:02.497 UTC INFO [nosqlstore] rg1-rn1 (00:00:40.007 UTC -> 00:01:00.009 UTC)
+Replication State: MASTER
+2018-12-13 00:01:02.497 UTC INFO [nosqlstore] rg1-rn1 (00:00:40.007 UTC -> 00:01:00.009 UTC)
+Memory
+	freeMemory=247788640
+	maxMemory=3817865216
+	totalMemory=378535936
+	pauseCount=1
+	pause95th=2
+	pause99th=2
+	pauseMax=2
+
+2018-12-13 00:01:22.479 UTC INFO [nosqlstore] rg1-rn1 (00:01:00.009 UTC -> 00:01:20.007 UTC)
+Replication State: MASTER
+2018-12-13 00:01:22.479 UTC INFO [nosqlstore] rg1-rn1 (00:01:00.009 UTC -> 00:01:20.007 UTC)
+Memory
+	freeMemory=244909184
+	maxMemory=3817865216
+	totalMemory=378535936
+	pauseCount=1
+	pause95th=2
+	pause99th=2
+	pauseMax=2
+
+2018-12-13 00:01:42.482 UTC INFO [nosqlstore] rg1-rn1 (00:01:20.007 UTC -> 00:01:40.010 UTC)
+Replication State: MASTER
+2018-12-13 00:01:42.482 UTC INFO [nosqlstore] rg1-rn1 (00:01:20.007 UTC -> 00:01:40.010 UTC)
+Memory
+	freeMemory=242923448
+	maxMemory=3817865216
+	totalMemory=378535936
+	pauseCount=1
+	pause95th=2
+	pause99th=2
+	pauseMax=2
+

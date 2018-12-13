@@ -1,0 +1,26 @@
+#
+# Runs an example program built using the "buildExamples" script.
+#
+# Assumes that the current directory is where CloudSim was unpacked.
+#
+# Read the examples and comments to understand how they operate.
+#
+
+usage() {
+    echo "Usage: runExample <exampleName> [-host <hostname>] [-httpPort <port>]"
+    exit 1
+}
+
+if [ $# -lt 1 ]; then
+    usage
+fi
+
+EX=$1
+shift
+
+if [ ! -d "examples/java" ]; then
+  echo "Script must be executed from the CloudSim install directory"
+  exit 1
+fi
+
+java -cp ".:examples/java/build:java/lib/*" -Djava.util.logging.config.file=logging.properties oracle.nosql.cloudsim.examples.$EX $*

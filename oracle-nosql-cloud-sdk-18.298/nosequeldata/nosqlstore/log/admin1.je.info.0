@@ -1,0 +1,48 @@
+2018-12-12 23:56:40.582 UTC INFO [1] No server auth method
+2018-12-12 23:56:40.583 UTC INFO [1] Started ServiceDispatcher. HostPort=localhost:5005
+2018-12-12 23:56:40.583 UTC INFO [1] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2018-12-12 23:56:40.628 UTC INFO [1] DTVLSN at start:0
+2018-12-12 23:56:40.628 UTC INFO [1] node:NullNode(-1) state change from DETACHED to UNKNOWN
+2018-12-12 23:56:40.780 UTC INFO [1] Current group size: 0
+2018-12-12 23:56:40.780 UTC INFO [1] New node 1(-1) unknown to rep group
+2018-12-12 23:56:40.781 UTC INFO [1] Master changed to 1
+2018-12-12 23:56:40.782 UTC INFO [1] Nascent group. 1 is master by virtue of being the first node.
+2018-12-12 23:56:40.782 UTC INFO [1] node:1(1) state change from UNKNOWN to MASTER
+2018-12-12 23:56:40.831 UTC INFO [1] Successfully added node:1(1) HostPort = localhost: 5005 [ELECTABLE]
+2018-12-12 23:56:40.838 UTC INFO [1] Updated minimum JE group version to 7.5.0
+2018-12-12 23:56:40.840 UTC INFO [1] Node 1 started
+2018-12-12 23:56:40.840 UTC INFO [1] node:NullNode(-1) state change from MASTER to UNKNOWN
+2018-12-12 23:56:40.841 UTC INFO [1] node:1(1) state change from UNKNOWN to MASTER
+2018-12-12 23:56:40.841 UTC INFO [1] Feeder manager accepting requests.
+2018-12-12 23:56:40.843 UTC INFO [1] Joining group as master
+2018-12-13 00:02:00.642 UTC INFO [1] Releasing commit block latch
+2018-12-13 00:02:01.567 UTC INFO [1] Feeder manager forced shutdown.
+2018-12-13 00:02:01.567 UTC INFO [1] Feeder Manager shutting down feeders. Active and nascent feeders:0 Managed feeders:0
+2018-12-13 00:02:01.567 UTC INFO [1] Feeder Manager completed shutting down feeders.
+2018-12-13 00:02:01.568 UTC INFO [1] Feeder manager exited. CurrentTxnEnd VLSN: 213
+2018-12-13 00:02:01.568 UTC INFO [1] node:NullNode(-1) state change from MASTER to UNKNOWN
+2018-12-13 00:02:01.568 UTC INFO [1] RepNode main thread shutting down.
+2018-12-13 00:02:01.569 UTC INFO [1] RepNode shutdown exception:
+Environment invalid because of previous exception: (JE 18.2.14) 1(1):nosequeldata/nosqlstore/sn1/admin1/env java.nio.file.NoSuchFileException: /Users/javiermugueta/Library/Mobile Documents/com~apple~CloudDocs/INTERCHANGE/TUTORIALS/oracle-nosql-cloud-sdk-18.298/nosequeldata/nosqlstore/sn1/admin1/env UNEXPECTED_EXCEPTION_FATAL: Unexpected internal Exception, unable to continue. Environment is invalid and must be closed.1(1)[UNKNOWN] 
+No feeders.
+Group info [nosqlstoreAdmin] 388d7cb6-f33c-4c98-a3de-08ac7c512102
+ Format version: 3
+ Change version: 1
+ Max persist rep node ID: 1
+ Min JE version: 7.5.0
+ Node:1 localhost:5005 (is member) changeVersion:1 LocalCBVLSN:-1 at:Thu Dec 13 00:56:40 CET 2018 jeVersion:18.2.14
+vlsnRange=first=1 last=213 sync=213 txnEnd=213
+lastReplayedTxn=null lastReplayedVLSN=-1 numActiveReplayTxns=0
+
+2018-12-13 00:02:01.569 UTC INFO [1] Shutting down node 1(1) DTVLSN:213
+2018-12-13 00:02:01.569 UTC INFO [1] Elections shutdown initiated
+2018-12-13 00:02:01.570 UTC INFO [1] Acceptor Thread 1 soft shutdown initiated.
+2018-12-13 00:02:01.570 UTC INFO [1] Learner Thread 1 soft shutdown initiated.
+2018-12-13 00:02:01.570 UTC INFO [1] Elections shutdown completed
+2018-12-13 00:02:01.570 UTC INFO [1] RepNode main thread: UNKNOWN 1(1) exited.
+2018-12-13 00:02:01.570 UTC INFO [1] Feeder Manager node: 1 soft shutdown initiated.
+2018-12-13 00:02:01.571 UTC INFO [1] ServiceDispatcher shutdown starting. HostPort=localhost:5005 Registered services: []
+2018-12-13 00:02:01.571 UTC INFO [1] ServiceDispatcher-localhost:5005 soft shutdown initiated.
+2018-12-13 00:02:01.571 UTC INFO [1] ServiceDispatcher shutdown completed. HostPort=localhost:5005
+2018-12-13 00:02:01.571 UTC INFO [1] 1(1) shutdown completed.
+2018-12-13 00:02:01.571 UTC INFO [1] node:NullNode(-1) state change from UNKNOWN to DETACHED

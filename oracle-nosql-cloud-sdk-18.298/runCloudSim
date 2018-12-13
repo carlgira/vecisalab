@@ -1,0 +1,5 @@
+#
+# Starts the CloudSim server. Assumes that the current directory is where
+# CloudSim was unpacked
+#
+java -Djava.util.logging.config.file=logging.properties -jar cloudsim/lib/cloudsim.jar $*

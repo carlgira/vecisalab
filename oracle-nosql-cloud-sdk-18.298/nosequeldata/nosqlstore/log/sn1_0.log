@@ -1,0 +1,32 @@
+2018-12-12 23:56:41.113 UTC INFO [sn1] Starting StorageNodeAgent for nosqlstore
+2018-12-12 23:56:41.147 UTC INFO [sn1] Create collector service and register parameter listeners successfully.
+2018-12-12 23:56:41.158 UTC INFO [sn1] Started MasterRebalanceThread
+2018-12-12 23:56:41.166 UTC INFO [sn1] Starting MonitorAgent.  Server socket factory:<ClearServerSocketFactory backlog=1024 portRange=0,0> Client socket factory:<ClientSocketFactory name=nosqlstore|sn|monitor id=-1106741931 connectMs=10000 readMs=5000>
+2018-12-12 23:56:41.172 UTC INFO [sn1] nosqlstore:sn1:MONITOR service port: 62710
+2018-12-12 23:56:41.175 UTC INFO [sn1] Successfully created secure proxy for the storage node agent
+2018-12-12 23:56:41.178 UTC INFO [sn1] nosqlstore:sn1:MAIN service port: 62710
+2018-12-12 23:56:41.179 UTC INFO [sn1] Rebound to registry port 5000 using name sn1 with SSF:<ClearServerSocketFactory backlog=1024 portRange=0,0>
+2018-12-12 23:56:41.179 UTC INFO [sn1] Service status changed from STARTING to RUNNING
+2018-12-12 23:56:41.179 UTC INFO [sn1] Started StorageNodeAgent for nosqlstore
+2018-12-12 23:56:41.235 UTC INFO [sn1] admin1: Creating AdminService
+2018-12-12 23:56:41.255 UTC INFO [sn1] admin1: Created AdminService
+2018-12-12 23:56:41.405 UTC INFO [sn1] rg1-rn1: Creating RepNode
+2018-12-12 23:56:41.417 UTC INFO [sn1] rg1-rn1: Starting RepNode
+2018-12-12 23:56:41.419 UTC INFO [sn1] rg1-rn1: Started RepNode
+2018-12-12 23:56:41.419 UTC INFO [sn1] rg1-rn1: Configuring RepNode
+2018-12-12 23:56:41.770 UTC INFO [sn1] Thread returning for service rg1-rn1
+2018-12-12 23:56:42.468 UTC INFO [sn1] rg1-rn1: Created RepNode
+2018-12-12 23:56:42.770 UTC INFO [sn1] noteState called
+2018-12-12 23:56:42.770 UTC INFO [sn1] added:State RN:rg1-rn1 state: MASTER top seq num: 14
+2018-12-12 23:56:42.771 UTC INFO [sn1] sn: sn1 state transition: State RN:rg1-rn1 state: MASTER top seq num: 14 active masters:[rg1-rn1] active replicas:0 replica leases:0
+2018-12-12 23:56:42.771 UTC INFO [sn1] Acquiring initial topology from RNs
+2018-12-12 23:56:42.775 UTC INFO [sn1] Topology acquired from RN: rg1-rn1 Topo seq#: 14
+2018-12-13 00:01:57.446 UTC INFO [sn1] noteState called
+2018-12-13 00:01:57.446 UTC INFO [sn1] added:State RN:rg1-rn1 state: UNKNOWN top seq num: 14
+2018-12-13 00:01:57.446 UTC INFO [sn1] sn: sn1 state transition: State RN:rg1-rn1 state: UNKNOWN top seq num: 14 active masters:[] active replicas:0 replica leases:0
+2018-12-13 00:01:57.454 UTC INFO [sn1] noteState called
+2018-12-13 00:01:57.454 UTC INFO [sn1] added:State RN:rg1-rn1 state: DETACHED top seq num: 14
+2018-12-13 00:01:57.454 UTC INFO [sn1] sn: sn1 state transition: State RN:rg1-rn1 state: DETACHED top seq num: 14 active masters:[] active replicas:0 replica leases:0
+2018-12-13 00:01:57.464 UTC INFO [sn1] noteState called
+2018-12-13 00:01:57.464 UTC INFO [sn1] added:State RN:rg1-rn1 state: DETACHED top seq num: 14
+2018-12-13 00:01:57.465 UTC INFO [sn1] sn: sn1 state transition: State RN:rg1-rn1 state: DETACHED top seq num: 14 active masters:[] active replicas:0 replica leases:0

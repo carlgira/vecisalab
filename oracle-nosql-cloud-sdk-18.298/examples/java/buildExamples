@@ -1,0 +1,17 @@
+#
+# Builds the examples that accompany CloudSim. Assumes that the
+# current directory is where CloudSim was unpacked
+#
+if [ ! -d "examples/java" ]; then
+  echo "Script must be executed from the CloudSim install directory"
+  exit 1
+fi
+
+#
+# Java 8 doesn't automatically create the build directory
+#
+if [ ! -d "examples/java/build" ]; then
+  mkdir examples/java/build
+fi
+
+javac -d examples/java/build -cp ".:java/lib/nosqldriver.jar" examples/java/*.java

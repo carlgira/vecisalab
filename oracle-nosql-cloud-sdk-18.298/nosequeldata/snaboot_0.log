@@ -1,0 +1,29 @@
+2018-12-12 23:56:38.135 UTC INFO [snaService] Starting, configuration file: nosequeldata/config.xml
+2018-12-12 23:56:38.200 UTC INFO [snaService] Setting java.net.InetAddress cache ttl to: networkaddress.cache.ttl=-1 networkaddress.cache.negative.ttl=-1
+2018-12-12 23:56:38.217 UTC INFO [snaService] RMI registry serial filter is configured as: sun.rmi.registry.registryFilter=oracle.kv.**;java.lang.Enum
+2018-12-12 23:56:38.237 UTC INFO [snaService] Creating a Registry on port localhost:5000 server socket factory:<ClearServerSocketFactory backlog=100 portRange=0,0>
+2018-12-12 23:56:38.365 UTC INFO [snaService] Successfully created secure proxy for the storage node agent
+2018-12-12 23:56:38.444 UTC INFO [snaService] Bound to registry port 5000 using name snaService with SSF:null
+2018-12-12 23:56:38.446 UTC INFO [snaService] Using mgmt class oracle.kv.impl.mgmt.NoOpAgent
+2018-12-12 23:56:38.935 UTC INFO [snaService] BootstrapAdmin: Starting AdminService
+2018-12-12 23:56:38.936 UTC INFO [snaService] BootstrapAdmin: Started AdminService
+2018-12-12 23:56:38.936 UTC INFO [snaService] Service status changed from STARTING to WAITING_FOR_DEPLOY
+2018-12-12 23:56:38.958 UTC INFO [snaService] Starting in bootstrap mode
+2018-12-12 23:56:38.959 UTC INFO [snaService] Starting commandService on rmi://localhost:5000/commandService
+2018-12-12 23:56:39.043 UTC INFO [snaService] Successfully created a secure proxy for commandService
+2018-12-12 23:56:39.060 UTC INFO [snaService] commandService service port: 62700
+2018-12-12 23:56:39.060 UTC INFO [snaService] Starting admin:CLIENT_ADMIN on rmi://localhost:5000/admin:CLIENT_ADMIN
+2018-12-12 23:56:39.216 UTC INFO [snaService] Successfully created a secure proxy for admin:CLIENT_ADMIN
+2018-12-12 23:56:39.236 UTC INFO [snaService] admin:CLIENT_ADMIN service port: 62700
+2018-12-12 23:56:39.236 UTC INFO [snaService] Admin web service is not starting up, web port: -1
+2018-12-12 23:56:39.236 UTC INFO [snaService] Started AdminService
+2018-12-12 23:56:39.236 UTC INFO [snaService] Thread returning for service BootstrapAdmin.5000
+2018-12-12 23:56:40.937 UTC INFO [snaService] Changing log files to log directory for store nosqlstore
+2018-12-12 23:56:41.066 UTC INFO [snaService] Register: root: nosequeldata, store: nosqlstore, hostingAdmin: true
+2018-12-12 23:56:41.066 UTC INFO [snaService] System architecture is x86_64
+2018-12-12 23:56:41.066 UTC INFO [snaService] Setting number of CPUs to 8
+2018-12-12 23:56:41.086 UTC INFO [snaService] Starting, configuration file: nosequeldata/config.xml
+2018-12-12 23:56:41.089 UTC INFO [snaService] Setting java.net.InetAddress cache ttl to: networkaddress.cache.ttl=-1 networkaddress.cache.negative.ttl=-1
+2018-12-12 23:56:41.098 UTC INFO [snaService] RMI registry serial filter is configured as: sun.rmi.registry.registryFilter=oracle.kv.**;java.lang.Enum
+2018-12-12 23:56:41.098 UTC INFO [snaService] Registered startup, config file: nosequeldata/nosqlstore/sn1/config.xml
+2018-12-12 23:56:41.112 UTC INFO [snaService] Changing log files to directory: nosequeldata/nosqlstore/log
