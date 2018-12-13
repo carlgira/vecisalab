@@ -34,7 +34,7 @@ Una promise permite ejecución asíncroma de una sentencia
 docker run -it javiermugueta/vecisalab node nodesamples/promise.js
 
 ### otros ejercicios
-Entra en la shell del contenedor (docker run -it javiermugueta/ecivecilab) y añade cualquier ejemplo, puedes utilizar este enlace: https://github.com/oracle/node-oracledb/tree/master/examples
+Entra en la shell del contenedor (docker run -it javiermugueta/vecisalab) y añade cualquier ejemplo, puedes utilizar este enlace: https://github.com/oracle/node-oracledb/tree/master/examples
 El editor es vi, pero puedes instalar cualquier cosa con yum install xxxx, recuerda que si sales del contenedor perderás los cambios ya que no estás ejecutándolo con persistencia
 
 ## apificación del esquema hr mediante node y express: ejecución en la máquina local
