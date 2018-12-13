@@ -162,9 +162,11 @@ curl -i -X DELETE http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA?id=put
 curl -i -X DELETE http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA
 
 # nosql
-Vamos a utilizar el sdk del simulador, primero clona este repo: 
+Vamos a utilizar el sdk del simulador, primero clona (o si no tienes git descarga el zip) de este repo: 
 
-https://github.com/javiermugueta/oracle-nosql-cloud-sdk-18.298
+git clone https://github.com/javiermugueta/oracle-nosql-cloud-sdk-18.298
+
+En una shell ponte en el directorio:
 
 cd oracle-nosql-cloud-sdk-18.298
 
@@ -185,6 +187,8 @@ examples/java/runExample IndexExample
 examples/java/runExample IndexExample ExampleaccessTokenProvider
 
 examples/java/runExample DeleteExample
+
+Echa un vistazo al código fuente
 
 # FIN
 
