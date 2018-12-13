@@ -38,7 +38,7 @@ Entra en la shell del contenedor (docker run -it javiermugueta/vecisalab) y aña
 El editor es vi, pero puedes instalar cualquier cosa con yum install xxxx, recuerda que si sales del contenedor perderás los cambios ya que no estás ejecutándolo con persistencia
 
 ## apificación del esquema hr mediante node y express: ejecución en la máquina local
-Se trata de una aplicación node.js con express que utiliza oraclenode-db para apificar la tabla employees del esquema hr. No necesitas hacer esto para apificar la BBDD (lo puedes hacer con ORDS) pero puede que en algún caso te interese.
+Se trata de una aplicación node.js con express que utiliza node-oracledb para apificar la tabla employees del esquema hr. No necesitas hacer esto para apificar la BBDD (lo puedes hacer con ORDS, lo veremos en otro ejercicio) pero puede que en algún caso te interese.
 
 Pasamos datos de conexión al contenedor mediante variables de entorno
 
@@ -48,7 +48,7 @@ export HR_PASSWORD=loqueyotediga (la pasword la sabe el instructor)
 
 export HR_CONNECTIONSTRING="(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=130.61.52.57)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=jsonpdb.dnslabel1.skynet.oraclevcn.com)))"
 
-ejecutamos el contenedor exportando el puerto 3000
+ejecutamos el contenedor exportando el puerto 3000:
 
 docker run -it -e HR_USER -e HR_PASSWORD -e HR_CONNECTIONSTRING -p 3000:3000 javiermugueta/ecivecilab node myserver/index.js
 
@@ -87,7 +87,10 @@ docker run -it javiermugueta/ocloudshell kubectl get svc
 
 (toma nota de la ip del servicio eciveci)
 
-prueba: http://130.61.15.199:3000/api/employees/174
+prueba: 
+http://130.61.15.199:3000/api/employees/174
+http://130.61.15.199:3000/api/employees
+
 
 # despliegue de ords en k8s
 Se trata de desplegar ORDS en kubernetes como capa de acceso a la BBDD mediante REST. Esto permite exponer la BBDD en REST en un cluster de k8s con pods stateless replicados n veces (alta disponibilidad), en este caso hemos configurado tres replicas
