@@ -161,6 +161,28 @@ curl -i -X DELETE http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA?id=put
 ### delete the collection
 curl -i -X DELETE http://130.61.70.73:8080/ords/hr/soda/latest/myJSONDATA
 
+# nosql
+Vamos a utilizar el simulador, primero clona este repo: https://github.com/javiermugueta/oracle-nosql-cloud-sdk-18.298
+
+cd oracle-nosql-cloud-sdk-18.298
+
+Arranca el simulador y espera a que aparezca "Oracle NoSQL Cloud Simulator is ready":
+./runCloudSim -root midemorepo
+
+Abre otra shell y compila los ejemplos:
+examples/java/buildExamples
+
+Ejecuta algun ejemplo:
+examples/java/runExample BasicTableExample
+
+examples/java/runExample IndexExample
+
+examples/java/runExample IndexExample ExampleaccessTokenProvider
+
+examples/java/runExample DeleteExample
+
+# FIN
+
 That's all folks!
 
 # doco
