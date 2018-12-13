@@ -16,22 +16,22 @@ Se conectan a la BBDD por el puerto 1521 de la IP pública del nodo 1 del RAC. E
 Los ejecutamos desde un contenedor que tiene instalado node10 y oracleinstantclient18, de esta menera no tienes que instalarte nada en local
 
 ### cómo obtener listado del contenido de los ejercicios
-docker run -it javiermugueta/ecivecilab ls nodesamples
+docker run -it javiermugueta/vecisalab ls nodesamples
 
 ### cómo realizar un test de connexion a la bbdd
-docker run -it javiermugueta/ecivecilab node nodesamples/testconn.js
+docker run -it javiermugueta/vecisalab node nodesamples/testconn.js
 
 ### ejemplo de soda en node.js
 SODA permite trabajar con JSON de manera fascilísima. Aqui un ejemplo en node, más adelante lo probaremos con más detalle mediasnte REST, no te lo pierdas!
 
 Este ejemplo crea un documento JSON y luego hace una query por un atributo del mismo, cuantas más veces lo ejecutes más líneas devuelve la query ya que siempre inserta el mismo contenido
 
-docker run -it javiermugueta/ecivecilab node nodesamples/sodahr.js
+docker run -it javiermugueta/vecisalab node nodesamples/sodahr.js
 
 ### promises
 Una promise permite ejecución asíncroma de una sentencia
 
-docker run -it javiermugueta/ecivecilab node nodesamples/promise.js
+docker run -it javiermugueta/vecisalab node nodesamples/promise.js
 
 ### otros ejercicios
 Entra en la shell del contenedor (docker run -it javiermugueta/ecivecilab) y añade cualquier ejemplo, puedes utilizar este enlace: https://github.com/oracle/node-oracledb/tree/master/examples
