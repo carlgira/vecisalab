@@ -84,7 +84,7 @@ docker run -it javiermugueta/ocloudshell kubectl create secret generic hrpasswor
 ```
 Ahora creamos el despliegue:
 ```
-docker run -it javiermugueta/ocloudshell kubectl apply -f https://github.com/javiermugueta/vecisalab/blob/master/k8s/eciveci.yaml
+docker run -it javiermugueta/ocloudshell kubectl apply -f https://raw.githubusercontent.com/javiermugueta/vecisalab/master/k8s/eciveci.yaml
 ```
 Comprobamos si se ha creado el pod:
 ```
