@@ -200,7 +200,7 @@ Abre otra shell y compila los ejemplos:
 examples/java/buildExamples
 
 Ejecuta algun ejemplo:
-``
+```
 examples/java/runExample BasicTableExample
 
 examples/java/runExample IndexExample
@@ -247,28 +247,29 @@ Comandos para arrancar y parar máquinas de la infra cloud que estamos utilizand
 ### start
 
 clu1cn1:
-
+```
 docker run -it javiermugueta/ocloudshell oci db node start --db-node-id ocid1.dbnode.oc1.eu-frankfurt-1.abtheljt7h64echvzjs53udlkly6diycycoji3ddrudwqurroweysdbunpla
-
+```
 clu1cn2:
-
+```
 docker run -it javiermugueta/ocloudshell oci db node start --db-node-id ocid1.dbnode.oc1.eu-frankfurt-1.abtheljtl2x2h5jevbnfmltocm5jthcjknptmlc4cn7jespdbzsaf4deieia
-
+```
 ### stop
-
+```
 docker run -it javiermugueta/ocloudshell oci db node stop --db-node-id ocid1.dbnode.oc1.eu-frankfurt-1.abtheljtl2x2h5jevbnfmltocm5jthcjknptmlc4cn7jespdbzsaf4deieia
 
 docker run -it javiermugueta/ocloudshell oci db node stop --db-node-id ocid1.dbnode.oc1.eu-frankfurt-1.abtheljt7h64echvzjs53udlkly6diycycoji3ddrudwqurroweysdbunpla
-
+```
 ## start/stop computo de k8s
 ### start
-
+```
 docker run -it javiermugueta/ocloudshell oci compute instance action --instance-id ocid1.instance.oc1.eu-frankfurt-1.abtheljtbocj2w4qywieacalgsortabg4kep77lplqfwfmlup77725rvsjxa --action start
 
 docker run -it javiermugueta/ocloudshell oci compute instance action --instance-id ocid1.instance.oc1.eu-frankfurt-1.abtheljtjhyzku2ujwmgitfoycrryy52u7rgh6e27hxhgnejp53wbijvt34a --action start
-
+```
 ### stop
-
+```
 docker run -it javiermugueta/ocloudshell oci compute instance action --instance-id ocid1.instance.oc1.eu-frankfurt-1.abtheljtbocj2w4qywieacalgsortabg4kep77lplqfwfmlup77725rvsjxa --action stop
 
 docker run -it javiermugueta/ocloudshell oci compute instance action --instance-id ocid1.instance.oc1.eu-frankfurt-1.abtheljtjhyzku2ujwmgitfoycrryy52u7rgh6e27hxhgnejp53wbijvt34a --action stop
+```
