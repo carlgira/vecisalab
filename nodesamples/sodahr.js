@@ -13,7 +13,7 @@ oracledb.autoCommit = true;
 
     console.log('Create a new (or open an existing) document collection');
     let sd = conn.getSodaDatabase();
-    let collectionName = 'collection-eciveci';
+    let collectionName = 'collection-soda';
     let myCollection = await sd.createCollection(collectionName);
 
     myDoc = sd.createDocument({name: "pedro", city: "vallecas"}); 
